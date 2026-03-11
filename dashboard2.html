@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./dashboard2.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index2.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <!-- <a href="./dashboard.html">Dashboard</a> -->
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <div class="dashboard">
+      <h1>YouTube Platform Analytics</h1>
+      <p class="subtitle">Administrator Insights and Platform Performance</p>
+
+      <!-- STATS -->
+
+      <div class="stats">
+        <div class="card">
+          <h3>Total Videos</h3>
+          <h2>12,450</h2>
+        </div>
+
+        <div class="card">
+          <h3>Total Views</h3>
+          <h2>34.8M</h2>
+        </div>
+
+        <div class="card">
+          <h3>Subscribers</h3>
+          <h2>890K</h2>
+        </div>
+
+        <div class="card">
+          <h3>Revenue</h3>
+          <h2>$125K</h2>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+
+      <div class="charts">
+        <div class="chart-card">
+          <h2>Monthly Views Growth</h2>
+          <div class="canvas-holder"><canvas id="viewsChart"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h2>Subscriber Growth</h2>
+          <div class="canvas-holder"><canvas id="subsChart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- ENGAGEMENT METRICS -->
+
+      <div class="engagement">
+        <div class="eng-card">
+          <h3>Average Watch Time</h3>
+          <p class="counter" data-target="394">0</p>
+          <!-- 6m 34s = 394 seconds -->
+        </div>
+
+        <div class="eng-card">
+          <h3>Likes Per Video</h3>
+          <p class="counter" data-target="4200">0</p>
+        </div>
+
+        <div class="eng-card">
+          <h3>Comments Per Video</h3>
+          <p class="counter" data-target="1100">0</p>
+        </div>
+
+        <div class="eng-card">
+          <h3>Shares</h3>
+          <p class="counter" data-target="820">0</p>
+        </div>
+      </div>
+
+      <!-- TOP VIDEOS -->
+
+      <div class="table-section">
+        <h2>Top Performing Videos</h2>
+
+        <table>
+          <tr>
+            <th>Video Title</th>
+            <th>Views</th>
+            <th>Likes</th>
+            <th>Comments</th>
+            <th>Watch Time</th>
+          </tr>
+
+          <tr>
+            <td>AI Will Replace Jobs?</td>
+            <td class="counter" data-target="2400000">0</td>
+            <td class="counter" data-target="150000">0</td>
+            <td class="counter" data-target="23000">0</td>
+            <td class="counter" data-target="12340">0</td>
+          </tr>
+
+          <tr>
+            <td>Top 10 Programming Languages</td>
+            <td class="counter" data-target="1800000">0</td>
+            <td class="counter" data-target="110000">0</td>
+            <td class="counter" data-target="18000">0</td>
+            <td class="counter" data-target="10420">0</td>
+          </tr>
+
+          <tr>
+            <td>Build Website in 10 Minutes</td>
+            <td class="counter" data-target="980000">0</td>
+            <td class="counter" data-target="80000">0</td>
+            <td class="counter" data-target="9000">0</td>
+            <td class="counter" data-target="7520">0</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- CREATOR PERFORMANCE -->
+
+      <div class="table-section">
+        <h2>Top Creators</h2>
+
+        <table>
+          <tr>
+            <th>Creator</th>
+            <th>Subscribers</th>
+            <th>Videos</th>
+            <th>Total Views</th>
+          </tr>
+
+          <tr>
+            <td>Tech World</td>
+            <td class="counter" data-target="2300000">0</td>
+            <td class="counter" data-target="450">0</td>
+            <td class="counter" data-target="120000000">0</td>
+          </tr>
+
+          <tr>
+            <td>Code Master</td>
+            <td class="counter" data-target="1100000">0</td>
+            <td class="counter" data-target="320">0</td>
+            <td class="counter" data-target="85000000">0</td>
+          </tr>
+
+          <tr>
+            <td>Digital Academy</td>
+            <td class="counter" data-target="900000">0</td>
+            <td class="counter" data-target="210">0</td>
+            <td class="counter" data-target="63000000">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // MONTHLY VIEWS
+
+  new Chart(document.getElementById("viewsChart"), {
+    type: "line",
+
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+
+      datasets: [
+        {
+          label: "Views",
+
+          data: [12000, 25000, 40000, 65000, 90000, 120000, 150000],
+
+          borderColor: "red",
+
+          backgroundColor: "transparent",
+
+          tension: 0.4,
+        },
+      ],
+    },
+  });
+
+  // SUBSCRIBER GROWTH
+
+  new Chart(document.getElementById("subsChart"), {
+    type: "bar",
+
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+
+      datasets: [
+        {
+          label: "Subscribers",
+
+          data: [2000, 4000, 7000, 9000, 12000, 15000, 20000],
+
+          backgroundColor: "red",
+        },
+      ],
+    },
+  });
+</script>
+
+<script>
+  const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+
+      const counter = entry.target;
+      const target = +counter.dataset.target;
+
+      let count = 0;
+
+      const update = () => {
+
+        const increment = target / 300; // slower speed
+
+        if (count < target) {
+
+          count += increment;
+
+          counter.innerText = formatNumber(Math.floor(count));
+
+          requestAnimationFrame(update);
+
+        } else {
+
+          counter.innerText = formatNumber(target);
+
+        }
+
+      };
+
+      update();
+
+      observer.unobserve(counter); // run only once
+
+    }
+
+  });
+
+}, { threshold: 0.6 });
+
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
+
+
+function formatNumber(num){
+
+  if(num >= 1000000){
+    return (num/1000000).toFixed(1) + "M";
+  }
+
+  if(num >= 1000){
+    return (num/1000).toFixed(1) + "K";
+  }
+
+  return num;
+
+}
+</script>

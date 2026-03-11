@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index2.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <!-- <a href="./dashboard.html">Dashboard</a> -->
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+    <div class="dashboard">
+      <h1 class="dashboard-title">Creator Dashboard</h1>
+
+      <!-- STATS -->
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Total Subscribers</h3>
+          <p class="counter" data-target="2350000">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Views</h3>
+          <p class="counter" data-target="98500000">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Videos Uploaded</h3>
+          <p class="counter" data-target="320">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Likes</h3>
+          <p class="counter" data-target="780000">0</p>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>Viewer Engagement</h3>
+          <div class="canvas-holder"><canvas id="lineChart"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Audience Devices</h3>
+          <div class="canvas-holder"><canvas id="doughnutChart"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Content Performance</h3>
+          <div class="canvas-holder"><canvas id="radarChart"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Traffic Sources</h3>
+          <div class="canvas-holder"><canvas id="polarChart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- RECENT VIDEOS -->
+
+      <div class="video-section">
+        <h2>Recent Videos</h2>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="img">
+              <img src="https://picsum.photos/400/200?1" />
+            </div>
+            <div class="video-info">
+              <h4>AI Future Explained</h4>
+              <p>1.2M Views</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="img">
+              <img src="https://picsum.photos/400/200?2" />
+            </div>
+            <div class="video-info">
+              <h4>Learn JavaScript Fast</h4>
+              <p>850K Views</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="img">
+              <img src="https://picsum.photos/400/200?3" />
+            </div>
+            <div class="video-info">
+              <h4>Build Website in 10 Minutes</h4>
+              <p>620K Views</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMMENTS -->
+
+      <div class="comments">
+        <h2>Latest Comments</h2>
+
+        <div class="comment">
+          <span>@Alex</span> : This tutorial helped a lot!
+        </div>
+
+        <div class="comment">
+          <span>@CodeMaster</span> : Waiting for next video!
+        </div>
+
+        <div class="comment">
+          <span>@TechWorld</span> : Amazing explanation!
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  /* COUNTER ANIMATION */
+
+  const counters = document.querySelectorAll(".counter");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+
+          const target = +counter.dataset.target;
+
+          let count = 0;
+
+          const update = () => {
+            const increment = target / 400;
+
+            if (count < target) {
+              count += increment;
+
+              counter.innerText = formatNumber(Math.floor(count));
+
+              requestAnimationFrame(update);
+            } else {
+              counter.innerText = formatNumber(target);
+            }
+          };
+
+          update();
+
+          observer.unobserve(counter);
+        }
+      });
+    },
+    { threshold: 0.6 },
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
+
+  function formatNumber(num) {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(1) + "M";
+    }
+
+    if (num >= 1000) {
+      return (num / 1000).toFixed(1) + "K";
+    }
+
+    return num;
+  }
+
+  /* CHARTS */
+
+  new Chart(document.getElementById("lineChart"), {
+    type: "line",
+
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+
+      datasets: [
+        {
+          label: "Views",
+          data: [1200, 1900, 3000, 2500, 4200, 5200, 6100],
+          borderColor: "red",
+          backgroundColor: "transparent",
+          tension: 0.4,
+        },
+      ],
+    },
+  });
+
+  new Chart(document.getElementById("doughnutChart"), {
+    type: "doughnut",
+
+    data: {
+      labels: ["Mobile", "Desktop", "Tablet"],
+
+      datasets: [
+        {
+          data: [65, 25, 10],
+          backgroundColor: ["red", "#333", "#777"],
+        },
+      ],
+    },
+  });
+
+  new Chart(document.getElementById("radarChart"), {
+    type: "radar",
+
+    data: {
+      labels: ["Education", "Tech", "Gaming", "Vlogs", "Reviews"],
+
+      datasets: [
+        {
+          label: "Content Score",
+          data: [80, 95, 60, 70, 85],
+          backgroundColor: "rgba(255,0,0,0.3)",
+          borderColor: "red",
+        },
+      ],
+    },
+  });
+
+  new Chart(document.getElementById("polarChart"), {
+    type: "polarArea",
+
+    data: {
+      labels: ["Search", "Suggested", "External", "Channel Page"],
+
+      datasets: [
+        {
+          data: [35, 40, 15, 10],
+          backgroundColor: ["red", "#333", "#555", "#777"],
+        },
+      ],
+    },
+  });
+</script>

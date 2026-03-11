@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./blog.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index2.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <!-- <a href="./dashboard.html">Dashboard</a> -->
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="blog-hero">
+      <div class="blog-hero-overlay"></div>
+      <div class="blog-hero-content">
+        <div class="blog-badge">Creator Insights</div>
+        <h1 class="blog-main-title">The <span>Creator</span> Gazette</h1>
+        <p>
+          Master the algorithm, discover new gear, and stay ahead of the digital
+          curve.
+        </p>
+
+        <div class="search-container">
+          <div class="search-box">
+            <form action="./error.html">
+              <input
+                type="text"
+                id="blogSearch"
+                placeholder="Search for articles, tips, or updates..."
+              />
+              <button id="searchBtn">Search</button>
+            </form>
+          </div>
+          <div id="searchSuggestions" class="search-suggestions"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="section-label">Featured <span>Insights</span></h2>
+        <div class="featured-flex">
+          <div class="featured-main-card">
+            <div class="card-tag">Editor's Pick</div>
+            <img
+              src="https://images.unsplash.com/photo-1492619339944-84920f005089?q=80&w=1200"
+              alt="Marketing Guide"
+            />
+            <div class="featured-overlay-text">
+              <h3>The 2026 Video Marketing Masterguide</h3>
+              <p>
+                Everything you need to know about the evolving landscape of
+                digital storytelling and audience retention.
+              </p>
+              <a href="./error.html">
+                <button class="read-btn">Read Masterguide</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="featured-side-list">
+            <div class="side-item">
+              <span class="category">Creator Tips</span>
+              <h4>5 Audio Secrets for Viral Shorts</h4>
+            </div>
+            <div class="side-item">
+              <span class="category">Gear News</span>
+              <h4>Top 3 Mirrorless Cameras for Beginners</h4>
+            </div>
+            <div class="side-item">
+              <span class="category">SEO</span>
+              <h4>How to Hack the 2026 Algorithm</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-posts">
+      <div class="container">
+        <h2 class="section-label">Latest <span>Stories</span></h2>
+        <div class="blog-grid" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-overlay"></div>
+      <div class="newsletter-container">
+        <div class="newsletter-card">
+          <div class="newsletter-header">
+            <div class="pulse-icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h2>The <span>Creator</span> Insider</h2>
+            <p>
+              Join 50k+ creators. Get the latest algorithm updates, monetization
+              hacks, and gear reviews delivered to your inbox weekly.
+            </p>
+          </div>
+
+          <form id="creatorNewsletter" class="newsletter-form" action="./error.html">
+            <div class="input-group">
+              <input
+                type="email"
+                id="userEmail"
+                placeholder="Enter your creator email"
+                required
+              />
+              <button type="submit" id="submitBtn">
+                <span>Subscribe</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <p class="privacy-note">
+            Respecting your inbox since 2024. No spam, ever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // 1. Blog Post Data
+  const postData = [
+    {
+      title: "Lighting Tips for Pro Content",
+      summary:
+        "How to look cinematic on a budget using basic home lighting kits.",
+      img: "https://picsum.photos/seed/light/400/250",
+    },
+    {
+      title: "Managing Your Burnout",
+      summary:
+        "Why creators fail and how to maintain a sustainable upload schedule.",
+      img: "https://picsum.photos/seed/stress/400/250",
+    },
+    {
+      title: "Thumbnail Psychology",
+      summary:
+        "The science behind high CTR and why colors matter more than you think.",
+      img: "https://picsum.photos/seed/art/400/250",
+    },
+    {
+      title: "YouTube SEO in 2026",
+      summary:
+        "Optimizing your titles and descriptions for the latest AI-driven search.",
+      img: "https://picsum.photos/seed/code/400/250",
+    },
+    {
+      title: "Monetizing Shorts",
+      summary:
+        "A deep dive into the revenue potential of vertical short-form video.",
+      img: "https://picsum.photos/seed/money/400/250",
+    },
+    {
+      title: "Collaboration Strategies",
+      summary:
+        "How to network with other creators to boost your subscriber count.",
+      img: "https://picsum.photos/seed/team/400/250",
+    },
+  ];
+
+  // 2. Inject Grid Items
+  const grid = document.getElementById("blogGrid");
+  postData.forEach((post) => {
+    grid.innerHTML += `
+        <div class="blog-card">
+            <img src="${post.img}" alt="Blog Image">
+            <div class="blog-card-content">
+                <h3>${post.title}</h3>
+                <p>${post.summary}</p>
+                <a href="./error.html" class="read-more-link">Read More →</a>
+            </div>
+        </div>
+    `;
+  });
+
+  // 3. GSAP Scroll Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Featured Stagger
+  gsap.from(".featured-main-card", {
+    scrollTrigger: ".featured-section",
+    x: -50,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from(".side-item", {
+    scrollTrigger: ".featured-section",
+    x: 100,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // Grid Stagger
+  gsap.from(".blog-card", {
+    scrollTrigger: {
+      trigger: ".blog-grid",
+      start: "top 80%",
+    },
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+</script>
+
+<script>
+  // Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// 1. Entrance Animation
+gsap.from(".newsletter-card", {
+    scrollTrigger: {
+        trigger: ".newsletter-section",
+        start: "top 80%",
+    },
+    opacity: 1,
+    y: 50,
+    duration: 1.2,
+    ease: "power3.out"
+});
+
+// 2. Form Submission Functionality
+const newsForm = document.getElementById('creatorNewsletter');
+const subBtn = document.getElementById('submitBtn');
+
+newsForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const originalText = subBtn.innerHTML;
+    
+    // Disable button & show loading
+    subBtn.disabled = true;
+    subBtn.innerHTML = '<span>Subscribing...</span>';
+    
+    // Simulate API call
+    setTimeout(() => {
+        subBtn.style.background = "#28a745"; // Success green
+        subBtn.innerHTML = '<span>Joined! ✅</span>';
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+            newsForm.reset();
+            subBtn.disabled = false;
+            subBtn.style.background = "#8B0000";
+            subBtn.innerHTML = originalText;
+        }, 3000);
+    }, 1500);
+});
+</script>

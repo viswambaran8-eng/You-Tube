@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./service.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index2.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <!-- <a href="./dashboard.html">Dashboard</a> -->
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="service-hero">
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <div class="badge">Creator Toolkit 2026</div>
+        <h1 class="hero-title">Elevate Your <span>Content</span></h1>
+        <p class="hero-subtitle">
+          Professional-grade tools for modern creators. From 4K processing to
+          real-time audience analytics, everything you need to grow is here.
+        </p>
+        <div class="hero-btns">
+          <a href="./error.html">
+            <button class="btn-primary">View All Services</button>
+          </a>
+          <a href="./error.html">
+            <button class="btn-outline">Watch Demo</button>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <section class="service-feature-row">
+      <div class="feature-container">
+        <div class="feature-text" id="hostingText">
+          <h2 class="section-title">Professional <span>Video Hosting</span></h2>
+          <ul class="feature-list">
+            <li>
+              <strong>Upload HD Videos:</strong> Seamlessly upload up to 8K
+              resolution with automated transcoding.
+            </li>
+            <li>
+              <strong>Fast Streaming:</strong> Global CDN ensures lightning-fast
+              playback with zero buffering.
+            </li>
+            <li>
+              <strong>Secure Hosting:</strong> Advanced DRM and private link
+              sharing to protect your intellectual property.
+            </li>
+          </ul>
+        </div>
+        <div class="feature-visual" id="hostingVisual">
+          <img
+            src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
+            alt="HD Video Hosting"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics-section">
+      <div class="container">
+        <h2 class="section-heading">Creator <span>Tools & Insights</span></h2>
+        <div class="analytics-grid">
+          <div class="analytics-card">
+            <div class="card-icon">📈</div>
+            <h3>Performance Analytics</h3>
+            <p>
+              Track watch time, click-through rates, and retention graphs for
+              every upload.
+            </p>
+          </div>
+          <div class="analytics-card">
+            <div class="card-icon">👥</div>
+            <h3>Subscriber Growth</h3>
+            <p>
+              Monitor your community expansion with detailed demographic
+              breakdowns.
+            </p>
+          </div>
+          <div class="analytics-card">
+            <div class="card-icon">🎯</div>
+            <h3>Audience Insights</h3>
+            <p>
+              Understand when your viewers are most active and what content they
+              crave.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-section">
+      <div class="live-container">
+        <div class="live-visual" id="liveVisual">
+          <div class="live-badge">LIVE</div>
+          <img
+            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000&auto=format&fit=crop"
+            alt="Live Streaming"
+          />
+        </div>
+        <div class="live-text" id="liveText">
+          <h2 class="section-title">Real-Time <span>Engagement</span></h2>
+          <p>
+            Go live instantly with ultra-low latency. Interact with your global
+            audience in real-time through our integrated suite of streaming
+            tools.
+          </p>
+          <div class="live-features">
+            <div class="l-item">💬 Real-time Chat</div>
+            <div class="l-item">🚀 Instant Broadcast</div>
+            <div class="l-item">📊 Live Stream Metrics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="monetization-section">
+      <div class="container">
+        <h2 class="section-heading text-center">
+          Fuel Your <span>Passion</span>
+        </h2>
+        <p class="section-subheading text-center">
+          Turn your creativity into a sustainable career with multiple revenue
+          streams.
+        </p>
+
+        <div class="monetization-grid">
+          <div class="monetization-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop"
+                alt="Ad Revenue"
+              />
+            </div>
+            <div class="card-body">
+              <div class="monetization-icon">💰</div>
+              <h3>Ad Revenue</h3>
+              <p>
+                Earn a share of the revenue from ads shown on your videos.
+                High-fidelity ads tailored to your audience's interests.
+              </p>
+            </div>
+          </div>
+
+          <div class="monetization-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1557804483-ef3ae72eba50?q=80&w=800&auto=format&fit=crop"
+                alt="Channel Memberships"
+              />
+            </div>
+            <div class="card-body">
+              <div class="monetization-icon">💎</div>
+              <h3>Channel Memberships</h3>
+              <p>
+                Create a loyal inner circle. Offer exclusive badges, emojis, and
+                members-only content for a monthly fee.
+              </p>
+            </div>
+          </div>
+
+          <div class="monetization-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop"
+                alt="Sponsored Content"
+              />
+            </div>
+            <div class="card-body">
+              <div class="monetization-icon">🤝</div>
+              <h3>Sponsored Content</h3>
+              <p>
+                Connect with top brands through our integrated marketplace.
+                Secure partnerships that align with your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="start-creating-cta">
+      <div class="cta-inner-container">
+        <div class="cta-visual">
+          <img
+            src="https://images.unsplash.com/photo-1492619339944-84920f005089?q=80&w=1000&auto=format&fit=crop"
+            alt="Start Creating"
+          />
+        </div>
+        <div class="cta-text-box">
+          <h2>Ready to share your <span>Vision?</span></h2>
+          <p>
+            Join millions of creators who are already shaping the future of
+            digital media. Your journey from zero to global starts with a single
+            click.
+          </p>
+          <div class="cta-action-row">
+            <a href="./error.html">
+              <button class="primary-cta-btn">Start Uploading Now</button>
+            </a>
+            <span class="cta-note">Join 10k+ creators this month</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  window.addEventListener("load", () => {
+    const tl = gsap.timeline();
+
+    // 1. Slow Zoom Out of the background image
+    tl.to(".service-hero", {
+      "--scale": 1,
+      duration: 3,
+      ease: "power2.out",
+      startAt: { "--scale": 1.1 },
+    });
+
+    // 2. Fade in Badge
+    tl.from(
+      ".badge",
+      {
+        opacity: 1,
+        y: -20,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      "-=2.5",
+    );
+
+    // 3. Staggered reveal for Title and Subtitle
+    tl.from(
+      ".hero-title",
+      {
+        opacity: 1,
+        y: 40,
+        duration: 1,
+        ease: "expo.out",
+      },
+      "-=2",
+    );
+
+    tl.from(
+      ".hero-subtitle",
+      {
+        opacity: 1,
+        y: 20,
+        duration: 0.8,
+      },
+      "-=1.5",
+    );
+
+    // 4. Buttons pop in
+    tl.from(
+      ".hero-btns button",
+      {
+        opacity: 1,
+        scale: 0.8,
+        stagger: 0.2,
+        duration: 0.6,
+        ease: "back.out(1.7)",
+      },
+      "-=1",
+    );
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // 1. Hosting Section Animation
+  gsap.from("#hostingText", {
+    scrollTrigger: { trigger: ".service-feature-row", start: "top 80%" },
+    x: -100,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from("#hostingVisual", {
+    scrollTrigger: { trigger: ".service-feature-row", start: "top 80%" },
+    x: 100,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // 2. Analytics Cards Stagger
+  gsap.from(".analytics-card", {
+    scrollTrigger: { trigger: ".analytics-grid", start: "top 85%" },
+    y: 50,
+    opacity: 1,
+    duration: 0.8,
+    ease: "expo.out",
+  });
+
+  // 3. Live Section Animation
+  gsap.from("#liveVisual", {
+    scrollTrigger: { trigger: ".live-section", start: "top 80%" },
+    scale: 0.8,
+    opacity: 1,
+    duration: 1.2,
+    ease: "expo.out",
+  });
+
+  gsap.from("#liveText", {
+    scrollTrigger: { trigger: ".live-section", start: "top 80%" },
+    y: 50,
+    opacity: 1,
+    duration: 1,
+    delay: 0.3,
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Monetization Cards Stagger
+  gsap.from(".monetization-card", {
+    scrollTrigger: {
+      trigger: ".monetization-grid",
+      start: "top 80%",
+    },
+    opacity: 1,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+  });
+
+  // CTA Box Reveal
+  gsap.from(".cta-inner-container", {
+    scrollTrigger: {
+      trigger: ".start-creating-cta",
+      start: "top 85%",
+    },
+    opacity: 1,
+    scale: 0.9,
+    duration: 1.2,
+    ease: "expo.out",
+  });
+
+  // Floating animation for the CTA button to grab attention
+  gsap.to(".primary-cta-btn", {
+    y: -5,
+    repeat: -1,
+    yoyo: true,
+    duration: 2,
+    ease: "sine.inOut",
+  });
+</script>

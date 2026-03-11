@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index2.html">Home 2</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <li class="menu-item">
+          <!-- <a href="./dashboard.html">Dashboard</a> -->
+        </li>
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="about-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">About Our <span>Platform</span></h1>
+        <p class="hero-tagline">
+          Empowering the next generation of storytellers to reach a global
+          audience through high-fidelity video and community connection.
+        </p>
+        <div class="hero-stats-mini">
+          <span>Since 2004</span> • <span>1M+ Creators</span> •
+          <span>Unlimited Stories</span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="./error.html">
+            <button class="btn-primary">Get Started</button>
+          </a>
+          <a href="./error.html">
+            <button class="btn-outline">Learn More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="story-container">
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1492619339944-84920f005089?q=80&w=800&auto=format&fit=crop"
+            alt="Founder Vision"
+          />
+        </div>
+        <div class="story-text">
+          <h2 class="section-heading">Our Story</h2>
+          <p>
+            It started in a small garage with a single camera and a big dream.
+            We realized that while the world was full of stories, the tools to
+            share them were often locked behind complex barriers.
+          </p>
+          <p>
+            Our founder envisioned a space where high-fidelity video meets raw
+            community connection. Today, that vision has evolved into a global
+            ecosystem for digital expression.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-vision">
+      <div class="mission-grid">
+        <div class="mission-card">
+          <div class="card-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>
+            To empower creators of all backgrounds to share their unique stories
+            and build meaningful, lasting communities through video.
+          </p>
+        </div>
+        <div class="mission-card">
+          <div class="card-icon">👁️</div>
+          <h3>Our Vision</h3>
+          <p>
+            To become the most engaging and innovative video platform for
+            creators worldwide, setting the standard for digital storytelling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-grid" id="aboutStats">
+        <div class="stat-box">
+          <h2 class="counter" data-target="1500000">0</h2>
+          <p>Total Users</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="counter" data-target="50000">0</h2>
+          <p>Global Creators</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="counter" data-target="10000000">0</h2>
+          <p>Videos Uploaded</p>
+        </div>
+        <div class="stat-box">
+          <h2 class="counter" data-target="215">0</h2>
+          <p>Countries Reached</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2 class="section-heading">Meet the Visionaries</h2>
+      <div class="team-grid" id="teamGrid"></div>
+    </section>
+
+    <section class="final-cta">
+      <div class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+          <h1>Join Our Creator Community</h1>
+          <p>
+            Empower your voice, reach a global audience, and start building your
+            legacy today. High-fidelity video, limitless potential.
+          </p>
+          <div class="cta-steps">
+            <span>1️⃣ Sign Up</span>
+            <span>2️⃣ Upload Videos</span>
+            <span>3️⃣ Grow Audience</span>
+          </div>
+          <a href="./error.html">
+            <button class="join-community-btn">Become a Creator</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./dashboard.html">Dashboard</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // GSAP Animation for About Hero
+  window.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline();
+
+    // Fade and Slide text up
+    tl.from(".hero-content", {
+      y: 60,
+      opacity: 1,
+      duration: 1.2,
+      ease: "power4.out",
+    });
+
+    // Subtle background image zoom
+    tl.from(
+      ".hero-overlay",
+      {
+        scale: 1.1,
+        duration: 2,
+        ease: "power2.out",
+      },
+      "-=1.2",
+    );
+
+    // Stagger the mini stats
+    tl.from(
+      ".hero-stats-mini span",
+      {
+        opacity: 1,
+        y: 10,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      "-=0.5",
+    );
+  });
+</script>
+
+<!-- buttons -->
+
+<script>
+  gsap.from(".hero-btns button", {
+    opacity: 1,
+    y: 20,
+    stagger: 0.2,
+    duration: 0.8,
+    delay: 0.5, // Starts after the title and tagline begin
+    ease: "power2.out",
+  });
+</script>
+
+<script>
+  // 1. GSAP ScrollReveal Animations
+  gsap.from(".story-image", {
+    scrollTrigger: ".story-section",
+    x: -100,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  gsap.from(".story-text", {
+    scrollTrigger: ".story-section",
+    x: 100,
+    opacity: 1,
+    duration: 1,
+    delay: 0.2,
+    ease: "power2.out",
+  });
+
+  gsap.from(".mission-card", {
+    scrollTrigger: ".mission-vision",
+    opacity: 1,
+    stagger: 0.3,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+  });
+
+  // 2. Number Counter Logic
+  const counters = document.querySelectorAll(".counter");
+  const statsSection = document.querySelector(".stats-grid"); // The container
+
+  const runCounters = () => {
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      let currentCount = parseFloat(counter.getAttribute("data-current") || 0);
+
+      const speedDivisor = 10000; // Adjusted for a smoother but noticeable speed
+      const increment = target / speedDivisor;
+
+      if (currentCount < target) {
+        currentCount += increment;
+        counter.setAttribute("data-current", currentCount);
+        counter.innerText = Math.ceil(currentCount).toLocaleString();
+        setTimeout(runCounters, 20);
+      } else {
+        counter.innerText =
+          target.toLocaleString() + (target === 195 ? "" : "+");
+      }
+    });
+  };
+
+  // --- THE OBSERVER LOGIC ---
+  const observerOptions = {
+    threshold: 0.3, // Trigger when 30% of the section is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        runCounters(); // Start counting
+        observer.unobserve(entry.target); // Stop watching so it only runs once
+      }
+    });
+  }, observerOptions);
+
+  // Start watching the stats section
+  if (statsSection) {
+    observer.observe(statsSection);
+  }
+
+  // Trigger counters when stats section enters view
+  ScrollTrigger.create({
+    trigger: "#aboutStats",
+    onEnter: runCounters,
+    once: true,
+  });
+</script>
+
+<script>
+  // 1. Team Data (Use professional creator/media themed photos)
+  const teamMembers = [
+    {
+      name: "Alex Rivera",
+      role: "Founder & CEO",
+      img: "https://picsum.photos/seed/alex/400/500",
+    },
+    {
+      name: "Sarah Chen",
+      role: "Head of Community",
+      img: "https://picsum.photos/seed/sarah/400/500",
+    },
+    {
+      name: "Marcus Wright",
+      role: "Lead Engineer",
+      img: "https://picsum.photos/seed/marcus/400/500",
+    },
+    {
+      name: "Jasmine Kaur",
+      role: "Creative Director",
+      img: "https://picsum.photos/seed/jasmine/400/500",
+    },
+  ];
+
+  // 2. Inject Team Cards
+  const teamGrid = document.getElementById("teamGrid");
+
+  teamMembers.forEach((member) => {
+    teamGrid.innerHTML += `
+        <div class="team-card">
+            <div class="member-img-container">
+                <img src="${member.img}" alt="${member.name}">
+            </div>
+            <div class="member-info">
+                <h3>${member.name}</h3>
+                <p>${member.role}</p>
+                <div class="member-socials">
+                    <a href="./error.html">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="./error.html">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="./error.html">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
+  });
+
+  // 3. GSAP Entrance Animations (using ScrollTrigger)
+  // Need to include ScrollTrigger in your HTML if not already there
+
+  // Team Staggered Entrance
+  gsap.to(".team-card", {
+    scrollTrigger: {
+      trigger: ".team-section",
+      start: "top 70%", // Triggers when the top of section hits 70% of viewport
+    },
+    opacity: 1,
+    y: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power3.out",
+    startAt: { y: 50, opacity: 0 },
+  });
+
+  // Final CTA Fade In
+  gsap.from(".cta-content", {
+    scrollTrigger: {
+      trigger: ".final-cta",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: 40,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+</script>
