@@ -816,10 +816,10 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://images.unsplash.com/photo-1492619339944-84920f005089?q=80&w=1920&auto=format&fit=crop");
+  background-image: url("./Assets/bloghero_11zon_11zon.webp");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.3) blur(4px);
+  filter: brightness(90%) blur(4px);
   z-index: 1;
   transform: scale(1.1);
 }
@@ -1125,10 +1125,10 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://images.unsplash.com/photo-1593697972672-132d0c27258a?q=80&w=1920&auto=format&fit=crop");
+  background-image: url("./Assets/blogcta_11zon_11zon.webp");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.15) blur(3px) grayscale(0.5);
+  filter: brightness(0.35) blur(3px) grayscale(0.5);
   z-index: 1;
 }
 

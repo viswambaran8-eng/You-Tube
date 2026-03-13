@@ -162,7 +162,7 @@
           <div class="featured-main-card">
             <div class="card-tag">Editor's Pick</div>
             <img
-              src="https://images.unsplash.com/photo-1492619339944-84920f005089?q=80&w=1200"
+              src="./Assets/marketing gudie_11zon.webp"
               alt="Marketing Guide"
             />
             <div class="featured-overlay-text">
@@ -217,7 +217,11 @@
             </p>
           </div>
 
-          <form id="creatorNewsletter" class="newsletter-form" action="./error.html">
+          <form
+            id="creatorNewsletter"
+            class="newsletter-form"
+            action="./error.html"
+          >
             <div class="input-group">
               <input
                 type="email"
@@ -321,37 +325,37 @@
       title: "Lighting Tips for Pro Content",
       summary:
         "How to look cinematic on a budget using basic home lighting kits.",
-      img: "https://picsum.photos/seed/light/400/250",
+      img: "./Assets/Lighting Tips for Pro Content_11zon_11zon.webp",
     },
     {
       title: "Managing Your Burnout",
       summary:
         "Why creators fail and how to maintain a sustainable upload schedule.",
-      img: "https://picsum.photos/seed/stress/400/250",
+      img: "./Assets/Managing Your Burnout_11zon_11zon.webp",
     },
     {
       title: "Thumbnail Psychology",
       summary:
         "The science behind high CTR and why colors matter more than you think.",
-      img: "https://picsum.photos/seed/art/400/250",
+      img: "./Assets/Thumbnail Psychology_11zon_11zon.webp",
     },
     {
       title: "YouTube SEO in 2026",
       summary:
         "Optimizing your titles and descriptions for the latest AI-driven search.",
-      img: "https://picsum.photos/seed/code/400/250",
+      img: "./Assets/2026 you tuber_11zon.webp",
     },
     {
       title: "Monetizing Shorts",
       summary:
         "A deep dive into the revenue potential of vertical short-form video.",
-      img: "https://picsum.photos/seed/money/400/250",
+      img: "./Assets/Monetizing Shorts_11zon_11zon.webp",
     },
     {
       title: "Collaboration Strategies",
       summary:
         "How to network with other creators to boost your subscriber count.",
-      img: "https://picsum.photos/seed/team/400/250",
+      img: "./Assets/Collaboration Strategies_11zon_11zon.webp",
     },
   ];
 
@@ -404,45 +408,68 @@
 
 <script>
   // Register ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-// 1. Entrance Animation
-gsap.from(".newsletter-card", {
+  // 1. Entrance Animation
+  gsap.from(".newsletter-card", {
     scrollTrigger: {
-        trigger: ".newsletter-section",
-        start: "top 80%",
+      trigger: ".newsletter-section",
+      start: "top 80%",
     },
     opacity: 1,
     y: 50,
     duration: 1.2,
-    ease: "power3.out"
-});
+    ease: "power3.out",
+  });
 
-// 2. Form Submission Functionality
-const newsForm = document.getElementById('creatorNewsletter');
-const subBtn = document.getElementById('submitBtn');
+  // 2. Form Submission Functionality
+  const newsForm = document.getElementById("creatorNewsletter");
+  const subBtn = document.getElementById("submitBtn");
 
-newsForm.addEventListener('submit', (e) => {
+  newsForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
     const originalText = subBtn.innerHTML;
-    
+
     // Disable button & show loading
     subBtn.disabled = true;
-    subBtn.innerHTML = '<span>Subscribing...</span>';
-    
+    subBtn.innerHTML = "<span>Subscribing...</span>";
+
     // Simulate API call
     setTimeout(() => {
-        subBtn.style.background = "#28a745"; // Success green
-        subBtn.innerHTML = '<span>Joined! ✅</span>';
-        
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            newsForm.reset();
-            subBtn.disabled = false;
-            subBtn.style.background = "#8B0000";
-            subBtn.innerHTML = originalText;
-        }, 3000);
+      subBtn.style.background = "#28a745"; // Success green
+      subBtn.innerHTML = "<span>Joined! ✅</span>";
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        newsForm.reset();
+        subBtn.disabled = false;
+        subBtn.style.background = "#8B0000";
+        subBtn.innerHTML = originalText;
+      }, 3000);
     }, 1500);
-});
+  });
+</script>
+
+<script>
+  // Function to handle the redirection
+  function redirectToError() {
+    window.location.href = "error.html";
+  }
+
+  // Attach the function to all side-item classes
+  document.addEventListener("DOMContentLoaded", () => {
+    const sideItems = document.querySelectorAll(".side-item");
+
+    sideItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Optional: Add a small GSAP "click" effect before redirecting
+        gsap.to(item, {
+          scale: 0.95,
+          duration: 0.1,
+          onComplete: redirectToError,
+        });
+      });
+    });
+  });
 </script>

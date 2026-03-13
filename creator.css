@@ -1093,19 +1093,22 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8b0000;
+  color: yellow;
   font-family: monospace;
   letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
+  background-image: url(./Assets/creators\ toolkits_11zon_11zon.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 .visual-box::after {
   content: "";
   position: absolute;
   width: 150%;
-  height: 1px;
+  height: 5px;
   background: rgba(139, 0, 0, 0.3);
   animation: scan 3s linear infinite;
 }
@@ -1334,7 +1337,11 @@ main {
 }
 .cta-box {
   width: 100%;
-  background: linear-gradient(135deg, #1a0000 0%, #000 100%);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Assets/explorehero_11zon_11zon.webp");
+  background-size: cover;
+  background-position: center;
   padding: 60px;
   border-radius: 20px;
   border: 1px solid #4a0000;
