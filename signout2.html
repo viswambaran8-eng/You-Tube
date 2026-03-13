@@ -1,13 +1,11 @@
-   
-   
-   <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media</title>
     <link rel="icon" href="./Assets/icon.webp" />
-    <link rel="stylesheet" href="./forgotpassword.css" />
+    <link rel="stylesheet" href="./signout.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link
@@ -39,7 +37,7 @@
       </div>
       <div class="header2">
         <div class="logo">
-          <a href="./index.html">
+          <a href="./index2.html">
             <img src="./Assets/logo.webp" alt="Logo" />
           </a>
         </div>
@@ -47,22 +45,21 @@
         <nav>
           <ul>
             <li class="dropdown">
-              <a href="./index.html">Home</a>
+              <a href="./index2.html">Home</a>
 
               <span class="drop-toggle">
                 <i class="fa-solid fa-caret-down"></i>
               </span>
 
               <ul class="dropdown-menu">
-                <li><a href="./index2.html">Home 2</a></li>
+                <li><a href="./index.html">Home 1</a></li>
               </ul>
             </li>
 
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./service.html">Services</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./creator.html">Creator</a></li>
+            <li><a href="./shorts.html">Shorts</a></li>
+            <li><a href="./communities.html">Communities</a></li>
           </ul>
         </nav>
 
@@ -70,7 +67,7 @@
           <div class="login">
             <!-- <a class="btn" href="./app.html">Buy Now</a> -->
 
-            <a href="./login.html">
+            <a href="./login2.html">
               <i class="fa-regular fa-circle-user"></i>
             </a>
           </div>
@@ -92,31 +89,29 @@
       <ul>
         <li class="has-dropdown menu-item">
           <div class="dropdown-header">
-            <a href="./index.html">Home</a>
+            <a href="./index2.html">Home</a>
             <span class="drop-caret" id="home-caret">▾</span>
           </div>
           <ul class="submenu" id="home-dropdown">
-            <li><a href="./index2.html">Home 2</a></li>
+            <li><a href="./index.html">Home 1</a></li>
           </ul>
         </li>
 
         <li class="menu-item">
-          <a href="./about.html">About</a>
+          <a href="./explore.html">Explore</a>
         </li>
         <li class="menu-item">
-          <a href="./service.html">Services</a>
+          <a href="./creator.html">Creator</a>
         </li>
         <li class="menu-item">
-          <a href="./blog.html">Blog</a>
+          <a href="./shorts.html">Shorts</a>
         </li>
         <li class="menu-item">
-          <a href="./contact.html">Contact Us</a>
+          <a href="./communities.html">Communities</a>
         </li>
+               
         <li class="menu-item">
-          <a href="./dashboard.html">Dashboard</a>
-        </li>
-        <li class="menu-item">
-          <a href="./login.html">Login</a>
+          <a href="./login2.html">Login</a>
         </li>
       </ul>
 
@@ -130,47 +125,53 @@
     <div class="overlay" id="overlay"></div>
 
     <main></main>
-   
+
     <section class="Structure">
-      <div class="forgot-wrapper">
-        <div class="forgot-card">
+      <div class="signout-wrapper">
+        <div class="signout-card">
           <!-- LEFT SIDE -->
-          <div class="forgot-left">
-            <h1>Recover Access to <span>Stackly YouTube Hub</span></h1>
+          <div class="signout-left">
+            <h1>Confirm Sign-Up from <span>Stackly YouTube Hub</span></h1>
 
             <ul>
-              <li>✔ Secure password recovery</li>
-              <li>✔ Protect your account data and preferences</li>
-              <li>✔ Encrypted password reset process</li>
-              <li>✔ Quick and safe account access restoration</li>
+              <li>✔ Secure account logout confirmation</li>
+              <li>✔ Protect your personal and browsing data</li>
+              <li>✔ Prevent unauthorized access to your account</li>
+              <li>✔ Safe and encrypted session termination</li>
             </ul>
 
-            <div class="tip">
-              Tip: Enter your registered Gmail to receive reset link.
-            </div>
+            <div class="tip">Tip: Re-enter credentials to sign out.</div>
           </div>
 
           <!-- RIGHT SIDE -->
-          <div class="forgot-right">
-            <h2>Forgot Password</h2>
-            <p>Enter your Gmail to receive a secure reset link.</p>
+          <div class="signout-right">
+            <h2>Sign-Up</h2>
+            <p class="headings">Verify your account to complete logout.</p>
 
-            <form id="forgotForm">
+            <form id="signoutForm">
               <div class="input-group">
                 <input
                   type="email"
-                  id="forgotEmail"
+                  id="signoutEmail"
                   placeholder="you@gmail.com"
                   required
                 />
               </div>
 
-              <button type="submit" class="forgot-btn">Send Reset Link</button>
+              <div class="input-group password-group">
+                <input
+                  type="password"
+                  id="signoutPassword"
+                  placeholder="Password"
+                  required
+                />
+                <span id="toggleSignoutPassword">Show</span>
+              </div>
 
-              <div class="links">
-                <p>
-                  Remembered your password?
-                  <a href="./login.html">Go back to Login</a>
+              <button type="submit" class="signout-btn">Confirm Sign-Up</button>
+              <div class="link">
+                <p class="links">
+                  Already Have An Account ? <a href="./login2.html">Sign-In</a>
                 </p>
               </div>
             </form>
@@ -178,13 +179,57 @@
         </div>
       </div>
     </section>
-   
-   
+
+    <script>
+      const toggleSignoutPassword = document.getElementById(
+        "toggleSignoutPassword",
+      );
+      const signoutPassword = document.getElementById("signoutPassword");
+      const signoutForm = document.getElementById("signoutForm");
+
+      // Show / Hide Password
+      toggleSignoutPassword.addEventListener("click", () => {
+        const type = signoutPassword.type === "password" ? "text" : "password";
+        signoutPassword.type = type;
+        toggleSignoutPassword.textContent =
+          type === "password" ? "Show" : "Hide";
+      });
+
+      signoutForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById("signoutEmail").value.trim();
+        const pass = signoutPassword.value.trim();
+
+        // Gmail validation
+        const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+        // Password validation
+        const passwordPattern =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
+
+        if (!gmailPattern.test(email)) {
+          alert("Email must end with @gmail.com");
+          return;
+        }
+
+        if (!passwordPattern.test(pass)) {
+          alert(
+            "Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters",
+          );
+          return;
+        }
+
+        alert("You have been securely signed out.");
+        window.location.href = "login2.html";
+      });
+    </script>
+
    <footer class="main-footer">
       <div class="footer-grid">
         <div class="footer-brand gsap-contact">
           <div class="logo" style="margin-bottom: 20px">
-            <a href="./index.html">
+            <a href="./index2.html">
               <img
                 src="./Assets/logo.webp"
                 alt="You Tube Logo"
@@ -203,18 +248,18 @@
         <div class="footer-links gsap-contact">
           <h4>Quick Links</h4>
 
-          <a href="./about.html">About</a>
-          <a href="./service.html">Services</a>
-          <a href="./blog.html">Blog</a>
-          <a href="./contact.html">Contact Us</a>
-          <a href="./dashboard.html">Dashboard</a>
-          <a href="./login.html">Login</a>
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+          <a href="./login2.html">Login</a>
         </div>
         <div class="footer-links">
           <h4>Navigation</h4>
-          <a href="./about.html">About</a>
-          <a href="./service.html">Services</a>
-          <a href="./blog.html">Blog</a>
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
         </div>
         <div class="footer-newsletter">
           <h4>Newsletter</h4>
@@ -222,7 +267,7 @@
             Stay updated with trending videos, viral reels, and creator
             highlights. See what the world is watching right now on Stackly.
           </p>
-          <form action="./error.html">
+          <form action="./error2.html">
             <div class="news-input">
               <input type="email" placeholder="Email Address" required />
               <button type="submit">→</button>
@@ -233,8 +278,8 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Innovations. All Rights Reserved.</p>
         <div class="legal-links">
-          <a href="./error.html">Privacy Policy</a>
-          <a href="./error.html">ISO Compliance</a>
+          <a href="./error2.html">Privacy Policy</a>
+          <a href="./error2.html">ISO Compliance</a>
         </div>
       </div>
     </footer>
@@ -255,26 +300,3 @@
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-<script>
-  const forgotForm = document.getElementById("forgotForm");
-
-  forgotForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const email = document.getElementById("forgotEmail").value.trim();
-
-    const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-
-    if (!gmailPattern.test(email)) {
-      alert("Email must end with @gmail.com");
-      return;
-    }
-
-    alert("Reset link sent to your Gmail.");
-
-    setTimeout(() => {
-      window.location.href = "login.html";
-    }, 1500);
-  });
-</script>

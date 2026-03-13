@@ -62,7 +62,7 @@
             <li><a href="./service.html">Services</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
-            <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            <li><a href="./dashboard.html">Dashboard</a></li>
           </ul>
         </nav>
 
@@ -113,7 +113,7 @@
           <a href="./contact.html">Contact Us</a>
         </li>
         <li class="menu-item">
-          <!-- <a href="./dashboard.html">Dashboard</a> -->
+          <a href="./dashboard.html">Dashboard</a>
         </li>
         <li class="menu-item">
           <a href="./login.html">Login</a>
@@ -130,217 +130,107 @@
     <div class="overlay" id="overlay"></div>
 
     <main></main>
-   
-   
+
     <section class="Structure">
-  <div class="signout-wrapper">
-    <div class="signout-card">
+      <div class="signout-wrapper">
+        <div class="signout-card">
+          <!-- LEFT SIDE -->
+          <div class="signout-left">
+            <h1>Confirm Sign-Up from <span>Stackly YouTube Hub</span></h1>
 
-      <!-- LEFT SIDE -->
-      <div class="signout-left">
-        <h1>Create your account on <span>Stackly Video Hub</span></h1>
+            <ul>
+              <li>✔ Secure account logout confirmation</li>
+              <li>✔ Protect your personal and browsing data</li>
+              <li>✔ Prevent unauthorized access to your account</li>
+              <li>✔ Safe and encrypted session termination</li>
+            </ul>
 
-        <ul>
-          <li>✔ Upload and share videos with a global audience</li>
-          <li>✔ Discover trending videos and viral content</li>
-          <li>✔ Build your own creator channel</li>
-          <li>✔ Access powerful video management tools</li>
-          <li>✔ Join the next generation of digital creators</li>
-        </ul>
+            <div class="tip">Tip: Re-enter credentials to sign out.</div>
+          </div>
 
-        <div class="tip">
-          Tip: Complete the form to start your creator journey.
+          <!-- RIGHT SIDE -->
+          <div class="signout-right">
+            <h2>Sign-Up</h2>
+            <p class="headings">Verify your account to complete logout.</p>
+
+            <form id="signoutForm">
+              <div class="input-group">
+                <input
+                  type="email"
+                  id="signoutEmail"
+                  placeholder="you@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="input-group password-group">
+                <input
+                  type="password"
+                  id="signoutPassword"
+                  placeholder="Password"
+                  required
+                />
+                <span id="toggleSignoutPassword">Show</span>
+              </div>
+
+              <button type="submit" class="signout-btn">
+                Confirm Sign-Up
+              </button>
+              <div class="link">
+                <p class="links">
+                  Already Have An Account ? <a href="./login.html">Sign-In</a>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- RIGHT SIDE -->
-      <div class="signout-right">
-        <h2>Create Account</h2>
-        <p class="headings">
-          Join Stackly Video Hub and start uploading your content.
-        </p>
+    <script>
+      const toggleSignoutPassword = document.getElementById(
+        "toggleSignoutPassword",
+      );
+      const signoutPassword = document.getElementById("signoutPassword");
+      const signoutForm = document.getElementById("signoutForm");
 
-        <form id="signupForm">
+      // Show / Hide Password
+      toggleSignoutPassword.addEventListener("click", () => {
+        const type = signoutPassword.type === "password" ? "text" : "password";
+        signoutPassword.type = type;
+        toggleSignoutPassword.textContent =
+          type === "password" ? "Show" : "Hide";
+      });
 
-          <!-- FULL NAME -->
-          <div class="input-group">
-            <input
-              type="text"
-              id="fullname"
-              placeholder="Full Name"
-              required
-            />
-          </div>
+      signoutForm.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-          <!-- ROLE -->
-          <div class="input-group">
-            <select id="role" required>
-              <option value="">Select Role</option>
-              <option value="administrator">Administrator</option>
-              <!-- <option value="editor">Editor</option> -->
-              <option value="user">User</option>
-            </select>
-          </div>
+        const email = document.getElementById("signoutEmail").value.trim();
+        const pass = signoutPassword.value.trim();
 
-          <!-- EMAIL -->
-          <div class="input-group">
-            <input
-              type="email"
-              id="email"
-              placeholder="you@gmail.com"
-              required
-            />
-          </div>
+        // Gmail validation
+        const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
-          <!-- CHANNEL / ORGANIZATION -->
-          <div class="input-group">
-            <input
-              type="text"
-              id="channel"
-              placeholder="Channel Name / Organization"
-              required
-            />
-          </div>
+        // Password validation
+        const passwordPattern =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
 
-          <!-- PASSWORD -->
-          <div class="input-group password-group">
-            <input
-              type="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-            <span id="togglePassword">Show</span>
-          </div>
+        if (!gmailPattern.test(email)) {
+          alert("Email must end with @gmail.com");
+          return;
+        }
 
-          <!-- CONFIRM PASSWORD -->
-          <div class="input-group password-group">
-            <input
-              type="password"
-              id="confirmPassword"
-              placeholder="Confirm Password"
-              required
-            />
-            <span id="toggleConfirmPassword">Show</span>
-          </div>
+        if (!passwordPattern.test(pass)) {
+          alert(
+            "Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters",
+          );
+          return;
+        }
 
-          <!-- TERMS -->
-          <!-- <div class="input-group checkbox-group"> -->
-            <label style="font-size:14px;text-align: center; width: 100%; display: flex;gap: 10px;justify-content: center;align-items: center;" >
-              <input type="checkbox" id="terms" required />
-              I agree to the Terms of Service and Privacy Policy.
-            </label>
-          <!-- </div> -->
-
-          <!-- BUTTON -->
-          <button type="submit" class="signout-btn">
-            Create Account
-          </button>
-
-          <div class="link">
-            <p class="links">
-              Already have an account?     
-              <a href="./login.html">Sign-In</a>
-            </p>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-
-const signupForm = document.getElementById("signupForm");
-
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
-
-const togglePassword = document.getElementById("togglePassword");
-const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
-
-/* SHOW / HIDE PASSWORD */
-
-togglePassword.addEventListener("click", () => {
-
-  const type = password.type === "password" ? "text" : "password";
-  password.type = type;
-
-  togglePassword.textContent = type === "password" ? "Show" : "Hide";
-});
-
-toggleConfirmPassword.addEventListener("click", () => {
-
-  const type = confirmPassword.type === "password" ? "text" : "password";
-  confirmPassword.type = type;
-
-  toggleConfirmPassword.textContent = type === "password" ? "Show" : "Hide";
-});
-
-/* SIGNUP VALIDATION */
-
-signupForm.addEventListener("submit", function (e) {
-
-  e.preventDefault();
-
-  const fullname = document.getElementById("fullname").value.trim();
-  const role = document.getElementById("role").value;
-  const email = document.getElementById("email").value.trim();
-  const channel = document.getElementById("channel").value.trim();
-  const pass = password.value.trim();
-  const confirmPass = confirmPassword.value.trim();
-  const terms = document.getElementById("terms").checked;
-
-  const gmailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-
-  const passwordPattern =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/;
-
-  if (fullname.length < 3) {
-    alert("Full name must be at least 3 characters");
-    return;
-  }
-
-  if (!role) {
-    alert("Please select your role");
-    return;
-  }
-
-  if (!gmailPattern.test(email)) {
-    alert("Email must end with @gmail.com");
-    return;
-  }
-
-  if (channel.length < 3) {
-    alert("Enter valid channel / organization name");
-    return;
-  }
-
-  if (!passwordPattern.test(pass)) {
-    alert(
-      "Password must contain:\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special symbol\n- Minimum 6 characters"
-    );
-    return;
-  }
-
-  if (pass !== confirmPass) {
-    alert("Passwords do not match");
-    return;
-  }
-
-  if (!terms) {
-    alert("You must agree to Terms and Privacy Policy");
-    return;
-  }
-
-  alert("Account created successfully!");
-
-  window.location.href = "login.html";
-
-});
-</script>
-   
+        alert("You have been securely signed out.");
+        window.location.href = "login.html";
+      });
+    </script>
    
    <footer class="main-footer">
       <div class="footer-grid">

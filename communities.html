@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./communities.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index2.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index.html">Home 1</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./creator.html">Creator</a></li>
+            <li><a href="./shorts.html">Shorts</a></li>
+            <li><a href="./communities.html">Communities</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login2.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index2.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index.html">Home 1</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./explore.html">Explore</a>
+        </li>
+        <li class="menu-item">
+          <a href="./creator.html">Creator</a>
+        </li>
+        <li class="menu-item">
+          <a href="./shorts.html">Shorts</a>
+        </li>
+        <li class="menu-item">
+          <a href="./communities.html">Communities</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./login2.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text-content">
+          <span class="badge">YouTube Creators</span>
+          <h1 class="main-title">
+            Building Your <span class="red-text">Global</span> Community
+          </h1>
+          <p class="description">
+            Connect deeper with your audience beyond the upload. Manage
+            exclusive memberships, host interactive polls, and share
+            behind-the-scenes updates directly with your most loyal subscribers.
+          </p>
+          <div class="cta-group">
+            <button class="btn-main" onclick="handleJoin()">
+              Launch Community
+            </button>
+            <a href="./error2.html">
+              <button class="btn-outline">View Guidelines</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1000"
+              alt="YouTube Creator Dashboard"
+            />
+            <div class="hover-overlay">
+              <p>Unlock Member-Only Perks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-communities">
+      <div class="section-header">
+        <h2 class="section-title">
+          Featured <span class="red-text">Communities</span>
+        </h2>
+        <p>Channels you might like to join and interact with.</p>
+      </div>
+
+      <div class="communities-grid">
+        <div class="community-card">
+          <div class="card-banner">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
+              alt="Tech"
+            />
+          </div>
+          <div class="card-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=1000&auto=format&fit=crop"
+              alt="User"
+            />
+          </div>
+          <div class="card-info">
+            <h3>Tech Innovators</h3>
+            <p>2.4M Members</p>
+            <button class="join-btn" onclick="toggleJoin(this)">Join</button>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <div class="card-banner">
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop"
+              alt="Music"
+            />
+          </div>
+          <div class="card-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+              alt="User"
+            />
+          </div>
+          <div class="card-info">
+            <h3>Lo-Fi Beats Hub</h3>
+            <p>850K Members</p>
+            <button class="join-btn" onclick="toggleJoin(this)">Join</button>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <div class="card-banner">
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+              alt="Gaming"
+            />
+          </div>
+          <div class="card-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop"
+              alt="User"
+            />
+          </div>
+          <div class="card-info">
+            <h3>Gaming Legends</h3>
+            <p>5.1M Members</p>
+            <button class="join-btn" onclick="toggleJoin(this)">Join</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-discussions">
+      <div class="section-header">
+        <h2 class="section-title">
+          Popular <span class="red-text">Discussions</span>
+        </h2>
+      </div>
+
+      <div class="discussion-list">
+        <div class="discussion-item" onclick="openThread('New Tech 2026')">
+          <div class="poll-icon">📊</div>
+          <div class="discussion-content">
+            <h4>What is the best camera for vlogging in 2026?</h4>
+            <p>Tech Innovators • 15.2K votes • 2 hours ago</p>
+          </div>
+          <div class="discussion-stats">
+            <span>💬 4.2K</span>
+          </div>
+        </div>
+
+        <div class="discussion-item" onclick="openThread('AI Update')">
+          <div class="poll-icon">📢</div>
+          <div class="discussion-content">
+            <h4>Major update on YouTube Creator Studio! Thoughts?</h4>
+            <p>YouTube Creators • 8.1K comments • 5 hours ago</p>
+          </div>
+          <div class="discussion-stats">
+            <span>💬 2.8K</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending-section">
+      <div class="trending-header">
+        <h2 class="title">Trending <span class="accent-red">Topics</span></h2>
+        <p class="subtitle">What creators are talking about right now</p>
+      </div>
+
+      <div class="trending-grid">
+        <div class="topic-pill" onclick="handleTrendClick('AI Video')">
+          <div class="topic-img">
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=400"
+              alt="AI Trend"
+            />
+          </div>
+          <div class="topic-info">
+            <span class="trend-rank">#1</span>
+            <h3>AI Video Ethics</h3>
+            <p>124K posts today</p>
+          </div>
+        </div>
+
+        <div class="topic-pill" onclick="handleTrendClick('Algorithm')">
+          <div class="topic-img">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400"
+              alt="Algorithm"
+            />
+          </div>
+          <div class="topic-info">
+            <span class="trend-rank">#2</span>
+            <h3>Algorithm Mastery</h3>
+            <p>89K posts today</p>
+          </div>
+        </div>
+
+        <div class="topic-pill" onclick="handleTrendClick('Shorts')">
+          <div class="topic-img">
+            <img
+              src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=400"
+              alt="Shorts"
+            />
+          </div>
+          <div class="topic-info">
+            <span class="trend-rank">#3</span>
+            <h3>Shorts Monetization</h3>
+            <p>56K posts today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-box">
+        <div class="cta-content">
+          <h2>
+            Ready to grow your <span class="accent-red">Subscriber Base?</span>
+          </h2>
+          <p>
+            Unlock the full potential of YouTube Communities. Start polls, share
+            exclusive photos, and connect with your fans like never before.
+          </p>
+          <div class="cta-actions">
+            <button class="primary-cta" onclick="startOnboarding()">
+              Get Started for Free
+            </button>
+            <a href="./error2.html" class="link-cta">View Creator Success Stories</a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <img
+            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1000"
+            alt="Community Interaction"
+            class="cta-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index2.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+          <a href="./login2.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error2.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error2.html">Privacy Policy</a>
+          <a href="./error2.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // 1. Standard JS Functions
+  function handleJoin() {
+    console.log("Community join sequence initiated...");
+    alert("Welcome to the YouTube Community! Checking credentials...");
+  }
+
+  // 2. GSAP Animations
+  document.addEventListener("DOMContentLoaded", () => {
+    // Hero Entrance Timeline
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+    tl.from(".hero-text-content", {
+      x: -100,
+      opacity: 0,
+      duration: 1.2,
+    })
+      .from(
+        ".hero-visual",
+        {
+          x: 100,
+          opacity: 0,
+          duration: 1.2,
+        },
+        "-=1",
+      ) // Overlap by 1 second
+      .from(
+        ".badge",
+        {
+          scale: 0,
+          opacity: 0,
+          duration: 0.5,
+        },
+        "-=0.5",
+      )
+      .from(
+        ".cta-group .btn-main, .cta-group .btn-outline",
+        {
+          y: 20,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.8,
+        },
+        "-=0.5",
+      );
+  });
+</script>
+
+<script>
+  /* Standard JS Functions */
+  function toggleJoin(btn) {
+    if (btn.classList.contains("joined")) {
+      btn.classList.remove("joined");
+      btn.innerText = "Join";
+      btn.style.backgroundColor = "white";
+    } else {
+      btn.classList.add("joined");
+      btn.innerText = "Joined";
+      btn.style.backgroundColor = "white";
+      btn.style.color = "black";
+    }
+  }
+
+  function openThread(title) {
+    console.log("Opening discussion thread: " + title);
+    alert("Loading discussion: " + title);
+  }
+
+  /* GSAP Animations */
+  document.addEventListener("DOMContentLoaded", () => {
+    // Animate Community Cards
+    gsap.from(".community-card", {
+      scrollTrigger: ".featured-communities",
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+
+    // Animate Discussion List
+    gsap.from(".discussion-item", {
+      scrollTrigger: ".popular-discussions",
+      opacity: 1,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: "back.out(1.7)",
+    });
+  });
+</script>
+
+<script>
+  /* Functional Logic */
+  function handleTrendClick(topic) {
+    console.log(`Filtering community feed for: ${topic}`);
+    alert(`Exploring trending posts about ${topic}...`);
+  }
+
+  function startOnboarding() {
+    alert("Welcome Creator! Let's set up your Community Tab.");
+  }
+
+  /* GSAP Animations */
+  document.addEventListener("DOMContentLoaded", () => {
+    // Trending Topics staggered entry
+    gsap.from(".topic-pill", {
+      scrollTrigger: ".trending-section",
+      opacity: 1,
+      stagger: 0.8,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    // CTA Box reveal
+    gsap.from(".cta-box", {
+      scrollTrigger: ".cta-section",
+      opacity: 1,
+      scale: 0.9,
+      duration: 1.2,
+      ease: "expo.out",
+    });
+
+    // CTA Text slide in
+    gsap.from(".cta-content > *", {
+      scrollTrigger: ".cta-box",
+      opacity: 0,
+      x: -50,
+      stagger: 0.3,
+      duration: 1,
+      delay: 0.5,
+    });
+  });
+</script>

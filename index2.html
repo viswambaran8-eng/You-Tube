@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index2.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index2.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index.html">Home 1</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./creator.html">Creator</a></li>
+            <li><a href="./shorts.html">Shorts</a></li>
+            <li><a href="./communities.html">Communities</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login2.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index2.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index.html">Home 1</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./explore.html">Explore</a>
+        </li>
+        <li class="menu-item">
+          <a href="./creator.html">Creator</a>
+        </li>
+        <li class="menu-item">
+          <a href="./shorts.html">Shorts</a>
+        </li>
+        <li class="menu-item">
+          <a href="./communities.html">Communities</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./login2.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <section class="yt-hero">
+      <div class="bg-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&q=80&w=2000"
+          alt="Studio"
+          class="hero-bg-img"
+        />
+        <div class="dark-gradient"></div>
+      </div>
+
+      <div class="yt-content">
+        <div class="stream-status">
+          <span class="pulse-dot"></span>
+          <span class="status-text">PREMIERING NOW</span>
+        </div>
+        <h1 class="main-title">
+          <div class="title-top">Mastering The Algorithm</div>
+          <div class="title-bottom">
+            <span class="accent-text">2026</span>
+          </div>
+        </h1>
+        <p class="yt-subtext">
+          Unlock the secrets behind viral retention and sustainable channel
+          growth.
+        </p>
+        <div class="yt-btns">
+          <button class="play-btn">START LEARNING</button>
+          <button class="channel-btn">VIEW CHANNEL</button>
+        </div>
+        <div class="creator-metrics">
+          <div class="metric">
+            <span class="num">4.2M</span><span class="label">Views</span>
+          </div>
+          <div class="metric">
+            <span class="num">150+</span><span class="label">Lessons</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-side">
+        <div class="video-preview-card">
+          <div class="preview-thumb">
+            <img
+              src="https://images.unsplash.com/photo-1492619339715-8a06c6a95e7e?auto=format&fit=crop&q=80&w=600"
+              alt="Thumbnail"
+            />
+            <div class="time-tag">12:45</div>
+            <div class="play-overlay">▶</div>
+          </div>
+          <div class="preview-info">
+            <h3>Advanced Lighting Setup</h3>
+            <p>25K watching now</p>
+          </div>
+        </div>
+
+        <div class="data-node node-1">
+          <span class="node-icon">🔔</span>
+          <div class="node-text">
+            <strong>New Subscriber</strong><span>Just now</span>
+          </div>
+        </div>
+
+        <div class="data-node node-2">
+          <div class="graph-mini">
+            <div class="bar" style="height: 40%"></div>
+            <div class="bar" style="height: 70%"></div>
+            <div class="bar" style="height: 50%"></div>
+            <div class="bar" style="height: 90%"></div>
+          </div>
+          <div class="node-text">
+            <strong>CTR 12.4%</strong><span>+2.1% spike</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feed-section trending-section">
+      <div class="section-header">
+        <h2 class="section-title"><span>🔥</span> Trending Now</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="video-grid" id="trendingGrid">
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">10:24</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>How to Rank #1 in 2026</h3>
+              <p>Creator Studio • 1.2M views • 2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">08:15</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>Minimalist Desk Setup for Streamers</h3>
+              <p>DesignTech • 850K views • 5 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">12:40</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>Gaming PCs Are Getting Too Big</h3>
+              <p>Hardware Unboxed • 300K views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">22:05</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>The Truth About Full-Time YouTube</h3>
+              <p>Vlog Daily • 2.1M views • 1 week ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">05:50</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>Camera Gear I Actually Use</h3>
+              <p>Lens Masters • 95K views • 3 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1536240478700-b86d24627a7b?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">15:30</span>
+          </div>
+          <div class="video-info">
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=50"
+              class="chan-avatar"
+            />
+            <div class="text-meta">
+              <h3>AI is Changing Video Editing</h3>
+              <p>Future Tech • 500K views • 6 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feed-section recommended-section">
+      <div class="section-header">
+        <h2 class="section-title"><span>✨</span> Recommended For You</h2>
+      </div>
+      <div class="rec-banner">
+        <div class="rec-content">
+          <span class="tag">TOP CHOICE</span>
+          <h2>Advanced Editing: Beyond the Cut</h2>
+          <p>
+            Based on your interest in cinematic production and high-retention
+            storytelling.
+          </p>
+          <button class="play-small">Watch Now</button>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1492619339715-8a06c6a95e7e?auto=format&fit=crop&q=80&w=1200"
+          alt="Featured"
+          class="rec-img"
+        />
+      </div>
+    </section>
+
+    <section class="feed-section latest-section">
+      <div class="section-header">
+        <h2 class="section-title"><span>🕒</span> Latest Uploads</h2>
+      </div>
+      <div class="video-grid" id="latestGrid">
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">15:00</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Gear Talk: Best Mics for 2026</h3>
+              <p>TechReviews • 1 hour ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">11:12</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Collaboration 101</h3>
+              <p>TeamWork • 2 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">04:20</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Keyboard Sounds ASMR</h3>
+              <p>KeysAndClicks • 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">30:00</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Learn Python in 30 Mins</h3>
+              <p>CodeLife • 5 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">08:45</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Agency Business Secrets</h3>
+              <p>GrowthHub • 8 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card small">
+          <div class="thumb-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+              alt="Video"
+            />
+            <span class="duration">14:10</span>
+          </div>
+          <div class="video-info">
+            <div class="text-meta">
+              <h3>Passive Income Reality</h3>
+              <p>WealthWise • 12 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feed-section category-section">
+      <div class="section-header">
+        <h2 class="section-title"><span>🏷️</span> Popular Categories</h2>
+      </div>
+      <div class="category-grid">
+        <div class="category-track">
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=400"
+              alt="Setup"
+            />
+            <div class="cat-overlay"><h3>Setups</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400"
+              alt="Tech"
+            />
+            <div class="cat-overlay"><h3>Tech</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=400"
+              alt="Vlog"
+            />
+            <div class="cat-overlay"><h3>Vlog</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=400"
+              alt="Gear"
+            />
+            <div class="cat-overlay"><h3>Gear</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1536240478700-b86d24627a7b?auto=format&fit=crop&q=80&w=400"
+              alt="AI"
+            />
+            <div class="cat-overlay"><h3>AI Tools</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=400"
+              alt="Code"
+            />
+            <div class="cat-overlay"><h3>Coding</h3></div>
+          </div>
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=400"
+              alt="Audio"
+            />
+            <div class="cat-overlay"><h3>Sound Design</h3></div>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=400"
+              alt="Camera"
+            />
+            <div class="cat-overlay"><h3>Photography</h3></div>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1611974714151-70d214e2113e?auto=format&fit=crop&q=80&w=400"
+              alt="Finance"
+            />
+            <div class="cat-overlay"><h3>Business</h3></div>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=400"
+              alt="Cinema"
+            />
+            <div class="cat-overlay"><h3>Cinematic</h3></div>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&q=80&w=400"
+              alt="Gaming"
+            />
+            <div class="cat-overlay"><h3>Gaming</h3></div>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=400"
+              alt="Planner"
+            />
+            <div class="cat-overlay"><h3>Lifestyle</h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feed-section creator-section">
+      <div class="section-header">
+        <h2 class="section-title"><span>👑</span> Top Creators</h2>
+      </div>
+      <div class="creator-wall">
+        <div class="creator-track">
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Marques Dev</h3>
+            <p>2.4M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Sarah Edit</h3>
+            <p>1.1M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Tech Talk</h3>
+            <p>850K Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Vlog Master</h3>
+            <p>3.2M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Creative Mind</h3>
+            <p>500K Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Retro Realm</h3>
+            <p>1.8M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Market Mindset</h3>
+            <p>920K Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Pulse Fitness</h3>
+            <p>2.1M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Chef's Table</h3>
+            <p>740K Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-bg"></div>
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"
+              alt="Creator"
+              class="creator-img"
+            />
+            <h3>Nomad Lens</h3>
+            <p>1.5M Subscribers</p>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feed-section shorts-section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span style="color: darkred">🎬</span> YouTube Shorts
+        </h2>
+      </div>
+      <div class="shorts-container">
+        <div class="short-card">
+          <img
+            src="https://images.unsplash.com/photo-1512446813987-075836934c9c?auto=format&fit=crop&q=80&w=400"
+            alt="Short"
+          />
+          <div class="short-meta">
+            <p>Top 5 Editing Tips! ✂️</p>
+            <span>1.2M views</span>
+          </div>
+        </div>
+        <div class="short-card">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400"
+            alt="Short"
+          />
+          <div class="short-meta">
+            <p>New Keyboard Build #shorts</p>
+            <span>800K views</span>
+          </div>
+        </div>
+        <div class="short-card">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=400"
+            alt="Short"
+          />
+          <div class="short-meta">
+            <p>My Coding Journey 💻</p>
+            <span>500K views</span>
+          </div>
+        </div>
+        <div class="short-card">
+          <img
+            src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=400"
+            alt="Short"
+          />
+          <div class="short-meta">
+            <p>RGB Overload! 🌈</p>
+            <span>2M views</span>
+          </div>
+        </div>
+        <div class="short-card">
+          <img
+            src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&q=80&w=400"
+            alt="Short"
+          />
+          <div class="short-meta">
+            <p>Studio Upgrade Day</p>
+            <span>300K views</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="yt-dashboard">
+      <section class="yt-section">
+        <h2 class="section-heading">Live Streams</h2>
+        <div class="yt-grid">
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live1/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">12K watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Lofi Hip Hop Radio - Beats to Sleep/Study</h3>
+                <p class="owner">Lofi Girl</p>
+                <p class="category">Music • 2.1M Likes</p>
+              </div>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live2/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">854 watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Coding a YouTube Clone from Scratch! (HTML/CSS)</h3>
+                <p class="owner">DevMaster</p>
+                <p class="category">Science & Tech</p>
+              </div>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live3/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">5.2K watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Grand Finals: Global Esports Championship 2026</h3>
+                <p class="owner">ESL Gaming</p>
+                <p class="category">Gaming • HD</p>
+              </div>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live4/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">1.1K watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Breaking News: Space X Mars Landing Updates</h3>
+                <p class="owner">Global News Hub</p>
+                <p class="category">News • LIVE</p>
+              </div>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live5/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">45K watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Talking About Everything & Nothing - Podcast #102</h3>
+                <p class="owner">The Mindset Show</p>
+                <p class="category">Entertainment</p>
+              </div>
+            </div>
+          </div>
+          <div class="live-card">
+            <div class="thumb-wrapper">
+              <img
+                src="https://picsum.photos/seed/live6/320/180"
+                alt="Live Stream"
+              />
+              <span class="live-tag">LIVE</span>
+              <span class="viewer-count">3.4K watching</span>
+            </div>
+            <div class="card-details">
+              <div class="user-pfp"></div>
+              <div class="text-meta">
+                <h3>Morning Yoga & Meditation for Inner Peace</h3>
+                <p class="owner">YogaWithJade</p>
+                <p class="category">Health & Fitness</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="yt-section">
+        <h2 class="section-heading">Community Highlights</h2>
+        <div class="community-grid">
+          <div class="post-card">
+            <div class="post-header">
+              <div class="user-pfp small"></div>
+              <span class="post-author">TravelVlogs • 5 hours ago</span>
+            </div>
+            <p class="post-body">
+              I'm choosing the destination for my next big series! Where should
+              I go first? ✈️
+            </p>
+            <div class="poll-box">
+              <div class="poll-row selected">
+                Tokyo, Japan <span class="voters">72%</span>
+              </div>
+              <div class="poll-row">
+                Reykjavik, Iceland <span class="voters">18%</span>
+              </div>
+              <div class="poll-row">
+                Cairo, Egypt <span class="voters">10%</span>
+              </div>
+            </div>
+            <div class="post-actions">
+              <span>👍 4.2K</span> <span>👎</span> <span>💬 382</span>
+            </div>
+          </div>
+          <div class="post-card">
+            <div class="post-header">
+              <div class="user-pfp small" style="background: #8b0000"></div>
+              <span class="post-author">TechLabs Pro • 10 hours ago</span>
+            </div>
+            <p class="post-body">
+              Just finished setting up the new studio! 📸 The lighting in the
+              back is a deep **dark red** to match the channel's aesthetic. New
+              review dropping tomorrow at 5 PM EST. Don't miss it!
+            </p>
+
+            <div
+              class="post-image"
+              style="
+                margin-top: 15px;
+                border-radius: 8px;
+                overflow: hidden;
+                border: 1px solid #333;
+              "
+            >
+              <img
+                src="https://picsum.photos/seed/studio/600/330"
+                alt="Studio Setup"
+                style="width: 100%; display: block"
+              />
+            </div>
+
+            <div
+              class="post-actions"
+              style="
+                margin-top: 15px;
+                display: flex;
+                gap: 20px;
+                color: #aaa;
+                font-size: 0.9rem;
+              "
+            >
+              <span
+                style="cursor: pointer; transition: color 0.3s"
+                onmouseover="this.style.color = '#ff4d4d'"
+                onmouseout="this.style.color = '#aaa'"
+                >👍 8.9K</span
+              >
+              <span style="cursor: pointer">👎</span>
+              <span style="cursor: pointer">💬 1.2K Comments</span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="yt-section">
+        <h2 class="section-heading">Suggested Channels</h2>
+        <div class="channel-grid">
+          <div class="channel-row">
+            <div class="pfp-circle"></div>
+            <div class="channel-text">
+              <h4>Marques Brownlee</h4>
+              <p>18M subscribers • 1.5K videos</p>
+              <p class="description">MKBHD: Quality Tech Videos</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+          <div class="channel-row">
+            <div class="pfp-circle"></div>
+            <div class="channel-text">
+              <h4>Veritasium</h4>
+              <p>14.5M subscribers • Science</p>
+              <p class="description">An element of truth.</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index2.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+          <a href="./login2.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error2.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error2.html">Privacy Policy</a>
+          <a href="./error2.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- hero -->
+
+<script>
+  const mainTl = gsap.timeline({
+    defaults: { ease: "expo.out", duration: 1.5 },
+  });
+
+  // Main Entrance sequence
+  mainTl
+    .from(".hero-bg-img", {
+      scale: 1.5,
+      opacity: 0,
+      duration: 2.5,
+    })
+    .from(
+      ".main-title div",
+      {
+        y: 80,
+        opacity: 0,
+        stagger: 0.2,
+      },
+      "-=1.8",
+    )
+    .from(
+      ".yt-subtext, .yt-btns, .creator-metrics",
+      {
+        y: 30,
+        opacity: 0,
+        stagger: 0.15,
+      },
+      "-=1.2",
+    )
+    .from(
+      ".video-preview-card",
+      {
+        x: 100,
+        opacity: 0,
+        rotation: 5,
+      },
+      "-=1.5",
+    )
+    .from(
+      ".data-node",
+      {
+        scale: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+      },
+      "-=1",
+    );
+
+  // Continuous Floating Motion
+  gsap.to(".video-preview-card", {
+    y: -20,
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+
+  gsap.to(".node-1", {
+    y: 15,
+    x: 10,
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+
+  gsap.to(".node-2", {
+    y: -15,
+    x: -5,
+    duration: 3.5,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+
+  // Pulse Dot Animation
+  gsap.to(".pulse-dot", {
+    scale: 1.5,
+    opacity: 0.4,
+    duration: 0.8,
+    repeat: -1,
+    yoyo: true,
+  });
+</script>
+
+<!-- 2 , 3 , 4 -->
+
+<script>
+  // Register ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // 1. Trending Cards Staggered Reveal
+  gsap.from("#trendingGrid .video-card", {
+    scrollTrigger: {
+      trigger: ".trending-section",
+      start: "top 75%",
+    },
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power4.out",
+  });
+
+  // 2. Recommended Banner Entrance
+  gsap.from(".rec-banner", {
+    scrollTrigger: {
+      trigger: ".recommended-section",
+      start: "top 80%",
+    },
+    scale: 0.9,
+    opacity: 0,
+    duration: 1.5,
+    ease: "expo.out",
+  });
+
+  // 3. Latest Uploads Side-to-Side Slide
+  gsap.from("#latestGrid .video-card", {
+    scrollTrigger: {
+      trigger: ".latest-section",
+      start: "top 80%",
+    },
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: "power2.out",
+  });
+
+  // 4. Add functionality: Click Alert
+  document.querySelectorAll(".video-card").forEach((card, index) => {
+    card.addEventListener("click", () => {
+      const title = card.querySelector("h3").innerText;
+      console.log(`Loading Video: ${title}`);
+      // Simple scale effect on click
+      gsap.to(card, { scale: 0.95, duration: 0.1, yoyo: true, repeat: 1 });
+    });
+  });
+</script>
+
+<!-- 5 , 6 , 7 -->
+
+<script>
+  // Register ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Categories Entrance (Staggered Pop)
+  gsap.from(".cat-card", {
+    scrollTrigger: {
+      trigger: ".category-section",
+      start: "top 80%",
+    },
+    scale: 0,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+  });
+
+  // Creator Cards Entrance (Slide Up)
+  gsap.from(".creator-card", {
+    scrollTrigger: {
+      trigger: ".creator-section",
+      start: "top 80%",
+    },
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1.2,
+    ease: "power4.out",
+  });
+
+  // Shorts Entrance (Slide from Right)
+  gsap.from(".short-card", {
+    scrollTrigger: {
+      trigger: ".shorts-section",
+      start: "top 80%",
+    },
+    opacity: 1,
+    stagger: 0.1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+  // Button Interaction Functionality
+  document.querySelectorAll(".sub-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      if (this.innerText === "Subscribe") {
+        this.innerText = "Subscribed";
+        this.style.background = "#333";
+        this.style.color = "#fff";
+        gsap.from(this, { scale: 1.2, duration: 0.3 });
+      } else {
+        this.innerText = "Subscribe";
+        this.style.background = "#fff";
+        this.style.color = "#000";
+      }
+    });
+  });
+</script>
+
+<!--  -->
+<script>
+  const track = document.querySelector(".creator-track");
+  const cards = document.querySelectorAll(".creator-card");
+
+  // Calculate the total width of one set of cards (including gaps)
+  // Since we doubled the cards, we move exactly half the total scroll width
+  const scrollWidth = track.scrollWidth / 2;
+
+  // Infinite Linear Animation
+  const loop = gsap.to(".creator-track", {
+    x: `-=${scrollWidth}`,
+    duration: 30, // Increase for slower movement, decrease for faster
+    ease: "none",
+    repeat: -1,
+    onReverseComplete: () => {
+      gsap.set(".creator-track", { x: 0 });
+    },
+  });
+
+  // Smooth Pause/Resume on Hover
+  const wall = document.querySelector(".creator-wall");
+
+  wall.addEventListener("mouseenter", () => {
+    gsap.to(loop, { timeScale: 0, duration: 0.5 }); // Slows to a stop
+  });
+
+  wall.addEventListener("mouseleave", () => {
+    gsap.to(loop, { timeScale: 1, duration: 0.5 }); // Speeds back up
+  });
+</script>
+
+<!-- subscribe -->
+<script>
+  document.querySelectorAll(".sub-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // Check current state
+      const isSubscribed = this.classList.contains("subscribed");
+
+      if (!isSubscribed) {
+        // --- SUBSCRIBE ACTION ---
+        this.classList.add("subscribed");
+        this.innerText = "Subscribed"; // Changes text without extra HTML
+
+        // GSAP Animation: Pop and Shake
+        const tl = gsap.timeline();
+        tl.to(this, { scale: 0.9, duration: 0.1 })
+          .to(this, { scale: 1.1, duration: 0.2, ease: "back.out(1.7)" })
+          .to(this, {
+            rotation: 5,
+            duration: 0.05,
+            repeat: 5,
+            yoyo: true,
+            onComplete: () => gsap.set(this, { rotation: 0 }),
+          });
+      } else {
+        // --- UNSUBSCRIBE ACTION ---
+        this.classList.remove("subscribed");
+        this.innerText = "Subscribe";
+
+        // GSAP Animation: Smooth fade back
+        gsap.to(this, {
+          scale: 1,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+      }
+    });
+  });
+</script>
+
+<!--  -->
+
+<script>
+  const catTrack = document.querySelector(".category-track");
+
+  // Calculate half the width (one set of cards)
+  const catWidth = catTrack.scrollWidth / 2;
+
+  // Set initial position to the left (hidden)
+  gsap.set(".category-track", { x: -catWidth });
+
+  // Infinite Linear Animation: Left to Right
+  const catLoop = gsap.to(".category-track", {
+    x: 0,
+    duration: 25, // Speed of the loop
+    ease: "none",
+    repeat: -1,
+  });
+
+  // Pause on Hover
+  const catWall = document.querySelector(".category-wall");
+
+  catWall.addEventListener("mouseenter", () => {
+    gsap.to(catLoop, { timeScale: 0, duration: 0.5 });
+  });
+
+  catWall.addEventListener("mouseleave", () => {
+    gsap.to(catLoop, { timeScale: 1, duration: 0.5 });
+  });
+</script>
+
+<script>
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // 1. Initial Load Animation for Headings
+    gsap.from(".section-heading", {
+      duration: 1,
+      x: -50,
+      opacity: 1,
+      stagger: 0.3,
+      ease: "power2.out",
+    });
+
+    // 2. 8️⃣ Live Streams: Staggered Fade-in of Cards
+    gsap.from(".live-card", {
+      scrollTrigger: {
+        trigger: ".yt-grid",
+        start: "top 85%", // Starts when the top of the grid hits 85% of viewport
+      },
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.15, // Cards pop in one after another
+      ease: "back.out(1.7)",
+    });
+
+    // 3. 9️⃣ Community Highlights: Scale Up effect
+    gsap.from(".post-card", {
+      scrollTrigger: {
+        trigger: ".community-grid",
+        start: "top 80%",
+      },
+      scale: 0.9,
+      opacity: 1,
+      duration: 1,
+      ease: "elastic.out(1, 0.75)",
+    });
+
+    // 4. 🔟 Suggested Channels: Slide in from the right
+    gsap.from(".channel-row", {
+      scrollTrigger: {
+        trigger: ".channel-grid",
+        start: "top 90%",
+      },
+      x: 100,
+      opacity: 1,
+      duration: 0.6,
+      stagger: 0.2,
+      ease: "power3.out",
+    });
+
+    // 5. Interactive Hover Effects (JS-based GSAP)
+    const cards = document.querySelectorAll(".live-card");
+
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+          scale: 1.03,
+          duration: 0.3,
+          backgroundColor: "#251010", // Subtle dark red tint on hover
+        });
+        // Pulse effect on the LIVE tag
+        gsap.to(card.querySelector(".live-tag"), {
+          backgroundColor: "#ff0000",
+          scale: 1.1,
+          repeat: -1,
+          yoyo: true,
+          duration: 0.5,
+        });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          scale: 1,
+          duration: 0.3,
+          backgroundColor: "#1a1a1a",
+        });
+        gsap.to(card.querySelector(".live-tag"), {
+          backgroundColor: "#8b0000",
+          scale: 1,
+          overwrite: true,
+        });
+      });
+    });
+
+    // 6. Subscribe Button Interaction
+    const subButtons = document.querySelectorAll(".btn-sub");
+
+    subButtons.forEach((btn) => {
+      btn.addEventListener("mousedown", () => {
+        gsap.to(btn, { scale: 0.9, duration: 0.1 });
+      });
+      btn.addEventListener("mouseup", () => {
+        gsap.to(btn, { scale: 1, duration: 0.1 });
+      });
+    });
+  });
+</script>

@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./explore.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Where Creators Connect</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index2.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="./index2.html">Home</a>
+
+              <span class="drop-toggle">
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+
+              <ul class="dropdown-menu">
+                <li><a href="./index.html">Home 1</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./creator.html">Creator</a></li>
+            <li><a href="./shorts.html">Shorts</a></li>
+            <li><a href="./communities.html">Communities</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <div class="login">
+            <!-- <a class="btn" href="./app.html">Buy Now</a> -->
+
+            <a href="./login2.html">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+          </div>
+
+          <div class="mobilebar">
+            <div class="hamburger-box">
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index2.html">Home</a>
+            <span class="drop-caret" id="home-caret">▾</span>
+          </div>
+          <ul class="submenu" id="home-dropdown">
+            <li><a href="./index.html">Home 1</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a href="./explore.html">Explore</a>
+        </li>
+        <li class="menu-item">
+          <a href="./creator.html">Creator</a>
+        </li>
+        <li class="menu-item">
+          <a href="./shorts.html">Shorts</a>
+        </li>
+        <li class="menu-item">
+          <a href="./communities.html">Communities</a>
+        </li>
+
+        <li class="menu-item">
+          <a href="./login2.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main></main>
+
+    <div class="explore-container">
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Explore the Universe of Content</h1>
+          <p class="hero-subtitle">
+            Discover trending videos, creators, and communities from around the
+            world.
+          </p>
+
+          <div class="search-wrapper">
+            <form action="./error2.html">
+              <input
+                type="text"
+                class="explore-search"
+                placeholder="Search for trending topics, music, or gaming..."
+              />
+              <button class="search-btn">🔍 Search</button>
+            </form>
+          </div>
+          <div class="trending-tags">
+            <a href="./error2.html"> <span>#Gaming</span> </a>
+            <a href="./error2.html"> <span>#Music2026</span> </a>
+            <a href="./error2.html"> <span>#TechReviews</span> </a>
+            <a href="./error2.html"> <span>#ASMR</span> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="trending-section">
+      <div class="section-header">
+        <h2 class="trending-title">🔥 Trending Videos</h2>
+        <div class="filter-tabs">
+          <button class="tab active" data-filter="all">All</button>
+          <button class="tab" data-filter="music">Music</button>
+          <button class="tab" data-filter="gaming">Gaming</button>
+          <button class="tab" data-filter="tech">Tech</button>
+        </div>
+      </div>
+
+      <div class="trending-grid" id="main-grid">
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/tech1/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">12:45</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Top 10 AI Breakthroughs of 2026</h4>
+              <p>Future Tech • 1.2M views • 3 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/tech2/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">08:12</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Mastering GSAP Animations in 10 Minutes</h4>
+              <p>Design Pro • 450K views • 5 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="music">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/music1/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">24:00</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>LIVE: Global Music Festival 2026</h4>
+              <p>World Stages • 89K watching</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/cook1/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">15:30</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>The Secret to Perfect Pasta - Italian Masterclass</h4>
+              <p>Chef Luca • 3.1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/tech3/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">05:20</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>iPhone 18 Ultra: First Look & Unboxing</h4>
+              <p>Tech Uncut • 5.6M views • 12 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/space1/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">10:00</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Why Mars is our Only Hope | Documentary</h4>
+              <p>Space Odyssey • 900K views • 2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="gaming">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/game1/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">42:10</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Elden Ring: The Shadow Expansion Walkthrough</h4>
+              <p>GamerLegend • 2.4M views • 6 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="gaming">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/game2/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">11:05</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Minecraft 1.30: Everything New!</h4>
+              <p>BlockBuilder • 800K views • 1 hour ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="music">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/music2/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">03:45</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>New Release: Neon Dreams - Cyberpunk OST</h4>
+              <p>SynthWave Records • 1.5M views</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="music">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/music3/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">1:15:20</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Deep Focus: 1 Hour of Ambient Red Noise</h4>
+              <p>Focus Beats • 200K views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="gaming">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/game3/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">18:50</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>How I reached Rank 1 in Valorant</h4>
+              <p>AcePlayer • 1.1M views • 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="v-card" data-category="tech">
+          <div class="v-thumb">
+            <img
+              src="https://picsum.photos/seed/tech4/400/225"
+              alt="Trending"
+            />
+            <span class="v-duration">09:30</span>
+          </div>
+          <div class="v-meta">
+            <div class="v-avatar"></div>
+            <div class="v-text">
+              <h4>Building the World's Fastest PC (Dark Red Theme)</h4>
+              <p>Hardware King • 750K views • 10 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="yt-extras-container">
+      <div class="dual-layout">
+        <section class="extra-section channels-box">
+          <h2 class="section-title"><span>👤</span> Recommended Channels</h2>
+          <div class="channel-card-grid">
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>MKBHD</h4>
+                <p>18.2M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>MrBeast</h4>
+                <p>240M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Fireship</h4>
+                <p>2.1M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Veritasium</h4>
+                <p>14.9M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Kurzgesagt</h4>
+                <p>22.4M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Linus Tech Tips</h4>
+                <p>15.6M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Web Dev Simplified</h4>
+                <p>1.4M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>TED-Ed</h4>
+                <p>19.1M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Cleo Abram</h4>
+                <p>3.2M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>GMTK</h4>
+                <p>1.5M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>The Futur</h4>
+                <p>2.3M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Vsauce</h4>
+                <p>20.8M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>Kevin Powell</h4>
+                <p>950K Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div class="chan-pfp"></div>
+              <div class="chan-info">
+                <h4>ColdFusion</h4>
+                <p>4.6M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+
+            <div class="rec-channel">
+              <div
+                class="chan-pfp"
+                style="
+                  background: url(&quot;https://picsum.photos/seed/mkbhd/100/100&quot;);
+                  background-size: cover;
+                  border: 2px solid #8b0000;
+                "
+              ></div>
+              <div class="chan-info">
+                <h4>MKBHD</h4>
+                <p>18.6M Subs</p>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="extra-section">
+        <h2 class="section-title"><span>✨</span> Discover New Creators</h2>
+        <div class="creator-discovery-grid">
+          <div class="creator-card">
+            <div class="creator-banner"></div>
+            <div class="creator-content">
+              <div class="creator-pfp-large"></div>
+              <h3>CyberSynth</h3>
+              <p>Creating futuristic lo-fi soundscapes for the year 2026.</p>
+              <div class="creator-stats">
+                <span>4.5K Videos</span> • <span>12K Subs</span>
+              </div>
+              <a href="./error2.html">
+                <button class="view-btn">View Channel</button>
+              </a>
+            </div>
+          </div>
+          <div class="creator-card">
+            <div class="creator-banner" style="background: #580000"></div>
+            <div class="creator-content">
+              <div class="creator-pfp-large"></div>
+              <h3>PixelChef</h3>
+              <p>Cooking 8-bit inspired recipes from your favorite games.</p>
+              <div class="creator-stats">
+                <span>120 Videos</span> • <span>85K Subs</span>
+              </div>
+              <a href="./error2.html">
+                <button class="view-btn">View Channel</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index2.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="You Tube Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Discover trending videos, creative reels, and inspiring creators
+            from around the world. Stackly brings you real-time content,
+            engaging communities, and the latest social trends all in one place.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+          <a href="./login2.html">Login</a>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./explore.html">Explore</a>
+          <a href="./creator.html">Creator</a>
+          <a href="./shorts.html">Shorts</a>
+          <a href="./communities.html">Communities</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Stay updated with trending videos, viral reels, and creator
+            highlights. See what the world is watching right now on Stackly.
+          </p>
+          <form action="./error2.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error2.html">Privacy Policy</a>
+          <a href="./error2.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // GSAP Introduction
+    const tl = gsap.timeline();
+
+    tl.from(".hero-content", {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    })
+      .from(
+        ".search-wrapper",
+        {
+          opacity: 0,
+          duration: 0.8,
+          ease: "expo.out",
+        },
+        "-=0.5",
+      )
+      .from(".v-card", {
+        y: 40,
+        opacity: 1,
+        stagger: 0.4,
+        duration: 0.6,
+        ease: "power2.out",
+      });
+
+    // SEARCH FUNCTION
+    const searchBtn = document.querySelector(".search-btn");
+    const searchInput = document.querySelector(".explore-search");
+
+    const performSearch = () => {
+      const query = searchInput.value;
+      if (query) {
+        alert("Searching for: " + query);
+        // Add your filtering logic here
+      }
+    };
+
+    searchBtn.addEventListener("click", performSearch);
+
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") performSearch();
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab");
+    const cards = document.querySelectorAll(".v-card");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        // 1. Update UI: Active Tab Class
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const filterValue = tab.getAttribute("data-filter");
+
+        // 2. Filter Logic with GSAP
+        // We first fade everything out slightly to prepare for the shift
+        gsap.to(cards, {
+          opacity: 1,
+          scale: 0.9,
+          duration: 0.2,
+          onComplete: () => {
+            cards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              // Show if 'all' or if category matches
+              if (filterValue === "all" || category === filterValue) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+
+            // 3. Fade the filtered results back in
+            gsap.to(".v-card:visible", {
+              // Uses a CSS trick or loop to target visible only
+              opacity: 1,
+              scale: 1,
+              stagger: 0.1,
+              duration: 0.4,
+              ease: "power2.out",
+            });
+
+            // Direct target for the visible cards if jQuery-style selectors aren't available:
+            const visibleCards = Array.from(cards).filter(
+              (c) => c.style.display !== "none",
+            );
+            gsap.to(visibleCards, {
+              opacity: 1,
+              scale: 1,
+              stagger: 0.08,
+              duration: 0.4,
+              ease: "back.out(1.2)",
+            });
+          },
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 1. Hover Animations for Category Pills
+    const pills = document.querySelectorAll(".cat-pill");
+    pills.forEach((pill) => {
+      pill.addEventListener("mouseenter", () => {
+        gsap.to(pill, { scale: 1.1, duration: 0.2 });
+      });
+      pill.addEventListener("mouseleave", () => {
+        gsap.to(pill, { scale: 1, duration: 0.2 });
+      });
+    });
+
+    // 2. Channel & Creator Entry Animation
+    gsap.from(".rec-channel", {
+      scrollTrigger: ".channel-card-grid",
+      opacity: 0,
+      x: -30,
+      stagger: 0.1,
+      duration: 0.8,
+      ease: "power2.out",
+    });
+
+    gsap.from(".creator-card", {
+      scrollTrigger: ".creator-discovery-grid",
+      scale: 0.8,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      ease: "elastic.out(1, 0.5)",
+    });
+
+    // 3. Floating Hashtag Effect
+    const tags = document.querySelectorAll(".tag-item");
+    tags.forEach((tag) => {
+      // Randomly float tags slightly
+      gsap.to(tag, {
+        y: "random(-5, 5)",
+        x: "random(-2, 2)",
+        repeat: -1,
+        yoyo: true,
+        duration: "random(1.5, 3)",
+        ease: "sine.inOut",
+      });
+    });
+
+    // 4. Function: Toggle Follow Button
+    const followBtns = document.querySelectorAll(".follow-btn");
+    followBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (btn.innerText === "Follow") {
+          btn.innerText = "Following";
+          btn.style.background = "#444";
+          gsap.from(btn, { scale: 1.3, duration: 0.2 });
+        } else {
+          btn.innerText = "Follow";
+          btn.style.background = "#8b0000";
+        }
+      });
+    });
+  });
+</script>

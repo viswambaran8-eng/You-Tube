@@ -796,11 +796,12 @@ main {
 
 /*  */
 
-/* ===== MAIN SECTION ===== */
+/* Structure */
 
+/* ===== MAIN SECTION ===== */
 .Structure {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -810,22 +811,18 @@ main {
 }
 
 /* ===== WRAPPER ===== */
-
 .signout-wrapper {
   width: 90%;
   max-width: 1000px;
 }
-
 /* ===== CARD ===== */
-
 .signout-card {
   display: flex;
 
-  /* RED GLASSMORPHISM */
+  /* RED Glassmorphism */
+  background: rgba(255, 59, 59, 0.15);
 
-  background: rgba(255, 0, 0, 0.15);
   backdrop-filter: blur(20px);
-
   border-radius: 20px;
   overflow: hidden;
 
@@ -834,7 +831,6 @@ main {
 }
 
 /* ===== LEFT SIDE ===== */
-
 .signout-left {
   flex: 1;
   padding: 50px;
@@ -850,15 +846,12 @@ main {
   color: transparent;
   background: linear-gradient(120deg, #ff3b3b 0%, #ffffff 50%, #ff3b3b 100%);
   background-size: 200% auto;
-
   -webkit-background-clip: text;
   background-clip: text;
-
   animation: shimmer 6s linear infinite;
 }
 
-/* ===== SHIMMER ANIMATION ===== */
-
+/* Shimmer Animation */
 @keyframes shimmer {
   0% {
     background-position: -200% center;
@@ -876,14 +869,12 @@ main {
 }
 
 .signout-left ul li {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
-
-/* ===== TIP BOX ===== */
 
 .tip {
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.7;
   padding: 10px 15px;
   border: 2px solid rgba(255, 0, 0, 0.35);
   border-radius: 12px;
@@ -891,18 +882,18 @@ main {
 }
 
 /* ===== RIGHT SIDE ===== */
-
 .signout-right {
   flex: 1;
   padding: 50px;
   background: rgba(0, 0, 0, 0.45);
   color: #fff;
   width: 100%;
+  text-align: center;
 }
 
 .signout-right h2 {
   font-size: 24px;
-  text-align: center;
+  text-align: start;
   margin-bottom: 10px;
 }
 
@@ -911,93 +902,64 @@ main {
 }
 
 .signout-right p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   opacity: 0.7;
-}
-
-/* ===== INPUT GROUP ===== */
-
-.input-group {
-  margin-bottom: 18px;
+  text-align: center;
 }
 
 /* ===== INPUTS ===== */
+.input-group {
+  margin-bottom: 20px;
+}
 
-.input-group input,
-.input-group select {
+.input-group input {
   width: 100%;
   padding: 14px;
   border-radius: 8px;
-
   border: none;
   outline: none;
-
-  background: white !important;
-font-weight: 600;
-  color: black;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
   font-size: 14px;
 }
 
-/* placeholder */
-
 .input-group input::placeholder {
-  color: gray;
+  color: rgba(255, 255, 255, 0.6);
 }
-
-/* ===== PASSWORD TOGGLE ===== */
 
 .password-group {
   position: relative;
 }
 
-#togglePassword,
-#toggleConfirmPassword {
+#toggleSignoutPassword {
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-
   cursor: pointer;
   font-size: 13px;
-
   color: #ff3b3b;
   font-weight: 600;
 }
 
-/* ===== TERMS CHECKBOX ===== */
-
-.input-group label {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
 /* ===== BUTTON ===== */
-
 .signout-btn {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 14px;
-
   border-radius: 8px;
   border: none;
-
   cursor: pointer;
   font-weight: bold;
-
   background: linear-gradient(90deg, #ff3b3b, #b00000);
-
   color: #fff;
   transition: 0.3s;
-
   font-family: "Lora", serif;
 }
 
 .signout-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+  opacity: 0.85;
 }
-
-/* ===== LOGIN LINK ===== */
 
 .link {
   width: 100%;
@@ -1005,6 +967,7 @@ font-weight: 600;
 }
 
 .links {
+  text-align: center;
   margin-top: 20px;
   font-size: 14px;
   color: #fff;
@@ -1015,31 +978,23 @@ font-weight: 600;
   color: #ff3b3b;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .links a:hover {
   opacity: 0.85;
 }
 
-
-
 /* ===== RESPONSIVE ===== */
 
-/* Tablet */
-
 @media screen and (max-width: 992px) {
-
   .Structure {
-    height: auto;
+    height: 100%;
     padding: 40px 20px;
   }
-
 }
 
-/* Tablet / Small Laptop */
-
 @media screen and (max-width: 900px) {
-
   .signout-card {
     flex-direction: column;
   }
@@ -1048,30 +1003,21 @@ font-weight: 600;
   .signout-right {
     padding: 20px;
   }
-
 }
 
-/* Mobile */
-
 @media screen and (max-width: 600px) {
-
   .Structure {
     padding: 30px 20px;
   }
-
 }
 
-@media screen and (max-width: 590px) {
-    .tip {
-    font-size: 8px;
+@media screen and (max-width: 450px) {
+  .Structure {
+    padding: 20px 10px;
   }
 }
 
-
-/* Small Mobile */
-
 @media screen and (max-width: 480px) {
-
   .signout-left h1 {
     font-size: 22px;
   }
@@ -1084,16 +1030,7 @@ font-weight: 600;
     font-size: 14px;
   }
 
-
-
-}
-
-/* Extra Small */
-
-@media screen and (max-width: 450px) {
-
-  .Structure {
-    padding: 20px 10px;
+  .tip {
+    font-size: 12px;
   }
-
 }
