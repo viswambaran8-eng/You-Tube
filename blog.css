@@ -679,7 +679,7 @@ body.no-scroll {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
   border-bottom: 1px solid #1e293b;
@@ -971,6 +971,9 @@ main {
   object-fit: cover;
   transition: 0.5s ease;
 }
+
+
+
 .featured-main-card:hover img {
   transform: scale(1.05);
 }
@@ -994,6 +997,19 @@ main {
   padding: 40px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
   z-index: 2;
+}
+
+@media screen and (max-width: 450px) {
+  .featured-main-card img {
+    height: 45vh;
+  }
+  .featured-overlay-text {
+    padding: 25px;
+  }
+}
+
+.featured-overlay-text h3 {
+  font-size: large;
 }
 
 .read-btn {

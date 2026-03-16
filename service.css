@@ -679,7 +679,7 @@ body.no-scroll {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1.8fr 0.8fr 2fr;
   gap: 80px;
   padding-bottom: 60px;
   border-bottom: 1px solid #1e293b;
